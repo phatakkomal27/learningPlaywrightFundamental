@@ -1,6 +1,6 @@
-import {chromium,Browser,BrowserContext,Page} from 'playwright'
+import {test,Browser,BrowserContext,chromium,Page} from '@playwright/test'
 
-async function run()
+test('Browser Context Page',async ({page}) => {
 {
     const browser:Browser = await chromium.launch({headless:false});
     console.log('Browser Launched');
@@ -16,4 +16,5 @@ async function run()
     await browser.close();
 }
 
-run();
+});
+

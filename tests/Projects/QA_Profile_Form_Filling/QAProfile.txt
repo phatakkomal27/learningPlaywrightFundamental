@@ -1,0 +1,14 @@
+QA Profile Information
+======================
+
+Name: Komal Phatak
+Role: Automation Tester
+Experience: 6 Years
+Specialization: Test Automation
+Tools: Selenium WebDriver, UFT
+Regions: Asia, Europe
+Expertise: Browser Commands, Navigation Commands
+
+Profile ID: QA_001
+Date Created: 26-08-2022
+Status: Active

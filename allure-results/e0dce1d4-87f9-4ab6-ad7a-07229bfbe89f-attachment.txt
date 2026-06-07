@@ -1,0 +1,78 @@
+
+Total states found: 37
+
+1. 
+2. Andaman and Nicobar
+3. Andhra Pradesh
+4. Arunachal Pradesh
+5. Assam
+6. Bihar
+7. Chandigarh
+8. Chhattisgarh
+9. Dādra and Nagar Haveli and Damān and Diu
+10. Delhi
+11. Goa
+12. Gujarat
+13. Himachal Pradesh
+14. Haryana
+15. Jharkhand
+16. Jammu and Kashmir
+17. Karnataka
+18. Kerala
+19. Ladakh
+20. Lakshadweep
+21. Maharashtra
+22. Meghalaya
+23. Manipur
+24. Madhya Pradesh
+25. Mizoram
+26. Nagaland
+27. Orissa
+28. Punjab
+29. Puducherry
+30. Rajasthan
+31. Sikkim
+32. Telangana
+33. Tamil Nadu
+34. Tripura
+35. Uttar Pradesh
+36. Uttaranchal
+37. West Bengal
+click on UP state
+sm_state sm_state_INMP
+sm_state sm_state_INOR
+sm_state sm_state_INMZ
+sm_state sm_state_INSK
+sm_state sm_state_INGA
+sm_state sm_state_INKL
+sm_state sm_state_INKA
+sm_state sm_state_INMH
+sm_state sm_state_INMN
+sm_state sm_state_INML
+sm_state sm_state_INCT
+sm_state sm_state_INGJ
+sm_state sm_state_INAR
+sm_state sm_state_INAS
+sm_state sm_state_INAP
+sm_state sm_state_INAN
+sm_state sm_state_INCH
+sm_state sm_state_INTG
+sm_state sm_state_INTN
+sm_state sm_state_INRJ
+sm_state sm_state_INPB
+sm_state sm_state_INPY
+sm_state sm_state_INJH
+sm_state sm_state_INTR
+sm_state sm_state_INLD
+sm_state sm_state_INNL
+sm_state sm_state_INLA
+sm_state sm_state_INBR
+sm_state sm_state_INUP
+Clicked on UP
+sm_state sm_state_INUT
+sm_state sm_state_INHP
+sm_state sm_state_INHR
+sm_state sm_state_INJK
+sm_state sm_state_INDL
+sm_state sm_state_INDH
+sm_state sm_state_INWB

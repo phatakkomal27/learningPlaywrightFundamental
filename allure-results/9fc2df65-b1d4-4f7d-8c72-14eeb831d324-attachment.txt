@@ -1,0 +1,38 @@
+
+Total states found: 37
+
+1. 
+2. Andaman and Nicobar
+3. Andhra Pradesh
+4. Arunachal Pradesh
+5. Assam
+6. Bihar
+7. Chandigarh
+8. Chhattisgarh
+9. Dādra and Nagar Haveli and Damān and Diu
+10. Delhi
+11. Goa
+12. Gujarat
+13. Himachal Pradesh
+14. Haryana
+15. Jharkhand
+16. Jammu and Kashmir
+17. Karnataka
+18. Kerala
+19. Ladakh
+20. Lakshadweep
+21. Maharashtra
+22. Meghalaya
+23. Manipur
+24. Madhya Pradesh
+25. Mizoram
+26. Nagaland
+27. Orissa
+28. Punjab
+29. Puducherry
+30. Rajasthan
+31. Sikkim
+32. Telangana
+33. Tamil Nadu
+34. Tripura
+35. Uttar Pradesh

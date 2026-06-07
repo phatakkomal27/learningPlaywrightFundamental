@@ -1,0 +1,4 @@
+Total products found: 40
+Total products after sorting: 40
+cheapest product details:
+locator('div[data-id]').first().first()

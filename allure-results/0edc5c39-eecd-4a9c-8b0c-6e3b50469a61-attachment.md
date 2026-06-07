@@ -1,0 +1,1377 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Handle_SVG\Task_SVG\FlipkartSearch.spec.ts >> Flipkart Search >> Search for macmini and validate results
+- Location: tests\Handle_SVG\Task_SVG\FlipkartSearch.spec.ts:9:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded while running "beforeEach" hook.
+```
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://www.flipkart.com/search", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Flipkart" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+        - text: Explore Plus
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - link "Login" [ref=e28] [cursor=pointer]:
+      - /url: /account/login?ret=/search
+    - link "Become a Seller" [ref=e30] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+      - generic [ref=e31]: Become a Seller
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e36]: More
+      - img [ref=e37]
+    - link "Cart" [ref=e42] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+      - img [ref=e43]
+      - generic [ref=e45]: Cart
+  - generic [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e54]:
+        - generic [ref=e57]: Filters
+        - generic [ref=e59]:
+          - generic [ref=e60]: PICK A CATEGORY
+          - generic [ref=e62]:
+            - img [ref=e64] [cursor=pointer]
+            - link "Clothing and Accessories" [ref=e66] [cursor=pointer]:
+              - /url: /clothing-and-accessories/pr?sid=clo&otracker=categorytree
+          - generic [ref=e68]:
+            - img [ref=e70] [cursor=pointer]
+            - link "Automotive Accessories" [ref=e72] [cursor=pointer]:
+              - /url: /automotive-accessories/pr?sid=1mt&otracker=categorytree
+          - generic [ref=e74]:
+            - img [ref=e76] [cursor=pointer]
+            - link "Food Products" [ref=e78] [cursor=pointer]:
+              - /url: /food-products/pr?sid=eat&otracker=categorytree
+          - generic [ref=e80]:
+            - img [ref=e82] [cursor=pointer]
+            - link "Vehicles" [ref=e84] [cursor=pointer]:
+              - /url: /vehicles/pr?sid=7dk&otracker=categorytree
+          - generic [ref=e86]:
+            - img [ref=e88] [cursor=pointer]
+            - link "Books" [ref=e90] [cursor=pointer]:
+              - /url: /books/pr?sid=bks&otracker=categorytree
+          - generic [ref=e91] [cursor=pointer]: Show 39 more categories
+      - generic [ref=e92]:
+        - generic [ref=e95]:
+          - heading "All Categories" [level=1] [ref=e96]
+          - generic [ref=e97]: (Showing 1 – 40 products of 2,50,589 products)
+          - generic [ref=e98]:
+            - generic [ref=e99]: Sort By
+            - generic [ref=e100]: Popularity
+            - generic [ref=e101] [cursor=pointer]: Price -- Low to High
+            - generic [ref=e102] [cursor=pointer]: Price -- High to Low
+        - generic [ref=e104]:
+          - generic [ref=e106]:
+            - link "BIGBAKRA Goat & Sheep Growth Promotor | Pet Health Supplements" [ref=e107] [cursor=pointer]:
+              - /url: /bigbakra-goat-sheep-growth-promotor-pet-health-supplements/p/itmeb39c5b56fde1?pid=PHSHKKMDEGFX6KZH&lid=LSTPHSHKKMDEGFX6KZHBTTBNN&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_1&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4bhP1iiGkBJ1imdYduJXRBt1eb0doqPVLCyencl4aib7Q%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "BIGBAKRA Goat & Sheep Growth Promotor | Pet Health Supplements" [ref=e111]
+              - img [ref=e114]
+            - img [ref=e117]
+            - link "BIGBAKRA Goat & Sheep Growth Promotor | Pet Health Supp..." [ref=e120] [cursor=pointer]:
+              - /url: /bigbakra-goat-sheep-growth-promotor-pet-health-supplements/p/itmeb39c5b56fde1?pid=PHSHKKMDEGFX6KZH&lid=LSTPHSHKKMDEGFX6KZHBTTBNN&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_1&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4bhP1iiGkBJ1imdYduJXRBt1eb0doqPVLCyencl4aib7Q%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e121]: 1 L
+            - generic [ref=e122]:
+              - generic [ref=e124]:
+                - text: "4.2"
+                - img [ref=e125]
+              - text: (215)
+            - img [ref=e127]
+            - link "₹782 ₹890 12% off" [ref=e128] [cursor=pointer]:
+              - /url: /bigbakra-goat-sheep-growth-promotor-pet-health-supplements/p/itmeb39c5b56fde1?pid=PHSHKKMDEGFX6KZH&lid=LSTPHSHKKMDEGFX6KZHBTTBNN&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_1&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4bhP1iiGkBJ1imdYduJXRBt1eb0doqPVLCyencl4aib7Q%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e129]:
+                - generic [ref=e130]: ₹782
+                - generic [ref=e131]: ₹890
+                - generic [ref=e132]: 12% off
+          - generic [ref=e134]:
+            - link "Vastarpara door 4PCS Car Silicone Door Latch Lock Protective Cover Car Pet Door Protector" [ref=e135] [cursor=pointer]:
+              - /url: /vastarpara-door-4pcs-car-silicone-latch-lock-protective-cover-pet-protector/p/itm53f6b331397b2?pid=RTDHMNZSCWH4MXPH&lid=LSTRTDHMNZSCWH4MXPHPXSMBX&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_2&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4aU_i_qIpMX68T0cvKyrFIE4xFltjWt14mNUIKhFku_Pw%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Vastarpara door 4PCS Car Silicone Door Latch Lock Protective Cover Car Pet Door Protector" [ref=e139]
+              - img [ref=e142]
+            - img [ref=e145]
+            - link "Vastarpara door 4PCS Car Silicone Door Latch Lock Prote..." [ref=e148] [cursor=pointer]:
+              - /url: /vastarpara-door-4pcs-car-silicone-latch-lock-protective-cover-pet-protector/p/itm53f6b331397b2?pid=RTDHMNZSCWH4MXPH&lid=LSTRTDHMNZSCWH4MXPHPXSMBX&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_2&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4aU_i_qIpMX68T0cvKyrFIE4xFltjWt14mNUIKhFku_Pw%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e149]:
+              - generic [ref=e151]:
+                - text: "3.7"
+                - img [ref=e152]
+              - text: (41)
+            - link "₹170 ₹499 65% off" [ref=e153] [cursor=pointer]:
+              - /url: /vastarpara-door-4pcs-car-silicone-latch-lock-protective-cover-pet-protector/p/itm53f6b331397b2?pid=RTDHMNZSCWH4MXPH&lid=LSTRTDHMNZSCWH4MXPHPXSMBX&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_2&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4aU_i_qIpMX68T0cvKyrFIE4xFltjWt14mNUIKhFku_Pw%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e154]:
+                - generic [ref=e155]: ₹170
+                - generic [ref=e156]: ₹499
+                - generic [ref=e157]: 65% off
+          - generic [ref=e159]:
+            - link "MAKFIRST Foot Pads weight loss Herbal Detox Weight Routine Support Plaster & Patch" [ref=e160] [cursor=pointer]:
+              - /url: /makfirst-foot-pads-weight-loss-herbal-detox-routine-support-plaster-patch/p/itm06d028b734db3?pid=BPRHHRPVNAZMZQBC&lid=LSTBPRHHRPVNAZMZQBCMKERGD&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_3&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4a_qPdvRjsf5n53N8_3LQteoNOtQAvEqp1r66b4bz5Ing%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "MAKFIRST Foot Pads weight loss Herbal Detox Weight Routine Support Plaster & Patch" [ref=e164]
+              - img [ref=e167]
+            - img [ref=e170]
+            - link "MAKFIRST Foot Pads weight loss Herbal Detox Weight Rout..." [ref=e173] [cursor=pointer]:
+              - /url: /makfirst-foot-pads-weight-loss-herbal-detox-routine-support-plaster-patch/p/itm06d028b734db3?pid=BPRHHRPVNAZMZQBC&lid=LSTBPRHHRPVNAZMZQBCMKERGD&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_3&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4a_qPdvRjsf5n53N8_3LQteoNOtQAvEqp1r66b4bz5Ing%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e174]: 3 x 10 Patches
+            - generic [ref=e175]:
+              - generic [ref=e177]:
+                - text: "4"
+                - img [ref=e178]
+              - text: (2,041)
+            - img [ref=e180]
+            - link "₹245 ₹1,499 83% off" [ref=e181] [cursor=pointer]:
+              - /url: /makfirst-foot-pads-weight-loss-herbal-detox-routine-support-plaster-patch/p/itm06d028b734db3?pid=BPRHHRPVNAZMZQBC&lid=LSTBPRHHRPVNAZMZQBCMKERGD&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_3&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4a_qPdvRjsf5n53N8_3LQteoNOtQAvEqp1r66b4bz5Ing%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e182]:
+                - generic [ref=e183]: ₹245
+                - generic [ref=e184]: ₹1,499
+                - generic [ref=e185]: 83% off
+          - generic [ref=e187]:
+            - link "Flipkart BLACK - 12 Months Membership" [ref=e188] [cursor=pointer]:
+              - /url: /flipkart-black-12-months-membership/p/itm8600c62a8a210?pid=XVZGYWT68RSFDUBX&lid=LSTXVZGYWT68RSFDUBXFZNBQK&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_4&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.XVZGYWT68RSFDUBX.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Flipkart BLACK - 12 Months Membership" [ref=e192]
+              - img [ref=e195]
+            - link "Flipkart BLACK - 12 Months Membership" [ref=e197] [cursor=pointer]:
+              - /url: /flipkart-black-12-months-membership/p/itm8600c62a8a210?pid=XVZGYWT68RSFDUBX&lid=LSTXVZGYWT68RSFDUBXFZNBQK&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_4&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.XVZGYWT68RSFDUBX.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e198]: Instant Activation
+            - generic [ref=e199]:
+              - generic [ref=e201]:
+                - text: "4.4"
+                - img [ref=e202]
+              - text: (1,15,915)
+            - img [ref=e204]
+            - link "₹1,499" [ref=e205] [cursor=pointer]:
+              - /url: /flipkart-black-12-months-membership/p/itm8600c62a8a210?pid=XVZGYWT68RSFDUBX&lid=LSTXVZGYWT68RSFDUBXFZNBQK&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_4&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.XVZGYWT68RSFDUBX.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e207]: ₹1,499
+        - generic [ref=e209]:
+          - generic [ref=e211]:
+            - link "CLINSKIN CREAM FACE CREAM Medicine Dispenser" [ref=e212] [cursor=pointer]:
+              - /url: /clinskin-cream-face-medicine-dispenser/p/itm167713b1d5f15?pid=MDDHHRAYFUCMJP8C&lid=LSTMDDHHRAYFUCMJP8C2WWFI6&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_5&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.MDDHHRAYFUCMJP8C.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "CLINSKIN CREAM FACE CREAM Medicine Dispenser" [ref=e216]
+              - img [ref=e219]
+            - link "CLINSKIN CREAM FACE CREAM Medicine Dispenser" [ref=e221] [cursor=pointer]:
+              - /url: /clinskin-cream-face-medicine-dispenser/p/itm167713b1d5f15?pid=MDDHHRAYFUCMJP8C&lid=LSTMDDHHRAYFUCMJP8C2WWFI6&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_5&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.MDDHHRAYFUCMJP8C.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e222]:
+              - generic [ref=e224]:
+                - text: "3.5"
+                - img [ref=e225]
+              - text: (14)
+            - link "₹169 ₹399 57% off" [ref=e226] [cursor=pointer]:
+              - /url: /clinskin-cream-face-medicine-dispenser/p/itm167713b1d5f15?pid=MDDHHRAYFUCMJP8C&lid=LSTMDDHHRAYFUCMJP8C2WWFI6&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_5&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.MDDHHRAYFUCMJP8C.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e227]:
+                - generic [ref=e228]: ₹169
+                - generic [ref=e229]: ₹399
+                - generic [ref=e230]: 57% off
+            - generic [ref=e233]: Saver Deal
+          - generic [ref=e235]:
+            - link "Krishna's Herbal & Ayurveda Sciatifix Herbal Juice Good Source of Calcium | Strengthens Bones and Muscles" [ref=e236] [cursor=pointer]:
+              - /url: /krishna-s-herbal-ayurveda-sciatifix-juice-good-source-calcium-strengthens-bones-muscles/p/itma30f956e00a70?pid=AYDH5F6AYBFF76PY&lid=LSTAYDH5F6AYBFF76PYFABEHO&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_6&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4YNLPp5Tqq4K_5V9dRP5aspCdeOZ8MhOgdNQ0rMPpi1_vUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Krishna's Herbal & Ayurveda Sciatifix Herbal Juice Good Source of Calcium | Strengthens Bones and Muscles" [ref=e240]
+              - img [ref=e243]
+            - img [ref=e246]
+            - link "Krishna's Herbal & Ayurveda Sciatifix Herbal Juice Good..." [ref=e249] [cursor=pointer]:
+              - /url: /krishna-s-herbal-ayurveda-sciatifix-juice-good-source-calcium-strengthens-bones-muscles/p/itma30f956e00a70?pid=AYDH5F6AYBFF76PY&lid=LSTAYDH5F6AYBFF76PYFABEHO&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_6&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4YNLPp5Tqq4K_5V9dRP5aspCdeOZ8MhOgdNQ0rMPpi1_vUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e250]: 1000 ml
+            - generic [ref=e251]:
+              - generic [ref=e253]:
+                - text: "4.1"
+                - img [ref=e254]
+              - text: (1,818)
+            - img [ref=e256]
+            - link "₹430 ₹478 10% off" [ref=e257] [cursor=pointer]:
+              - /url: /krishna-s-herbal-ayurveda-sciatifix-juice-good-source-calcium-strengthens-bones-muscles/p/itma30f956e00a70?pid=AYDH5F6AYBFF76PY&lid=LSTAYDH5F6AYBFF76PYFABEHO&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_6&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4YNLPp5Tqq4K_5V9dRP5aspCdeOZ8MhOgdNQ0rMPpi1_vUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e258]:
+                - generic [ref=e259]: ₹430
+                - generic [ref=e260]: ₹478
+                - generic [ref=e261]: 10% off
+            - generic [ref=e264]: Buy 2 items, save extra ₹20
+          - generic [ref=e266]:
+            - link "Emolene Propylene Glycol (hydronourisher for dry skin) Cream" [ref=e267] [cursor=pointer]:
+              - /url: /emolene-propylene-glycol-hydronourisher-dry-skin-cream/p/itm00a42f134e165?pid=ALOHHSG4JVDKVRBZ&lid=LSTALOHHSG4JVDKVRBZHU4NZS&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_7&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ALOHHSG4JVDKVRBZ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Emolene Propylene Glycol (hydronourisher for dry skin) Cream" [ref=e271]
+              - img [ref=e274]
+            - link "Emolene Propylene Glycol (hydronourisher for dry skin) ..." [ref=e276] [cursor=pointer]:
+              - /url: /emolene-propylene-glycol-hydronourisher-dry-skin-cream/p/itm00a42f134e165?pid=ALOHHSG4JVDKVRBZ&lid=LSTALOHHSG4JVDKVRBZHU4NZS&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_7&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ALOHHSG4JVDKVRBZ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e277]: 100 g
+            - generic [ref=e278]:
+              - generic [ref=e280]:
+                - text: "4.3"
+                - img [ref=e281]
+              - text: (5,507)
+            - img [ref=e283]
+            - link "₹341 ₹420 18% off" [ref=e284] [cursor=pointer]:
+              - /url: /emolene-propylene-glycol-hydronourisher-dry-skin-cream/p/itm00a42f134e165?pid=ALOHHSG4JVDKVRBZ&lid=LSTALOHHSG4JVDKVRBZHU4NZS&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_7&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ALOHHSG4JVDKVRBZ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e285]:
+                - generic [ref=e286]: ₹341
+                - generic [ref=e287]: ₹420
+                - generic [ref=e288]: 18% off
+          - generic [ref=e290]:
+            - link "PENTAPATCH EYE PATCH JUNIOR Adhesive Band Aid" [ref=e291] [cursor=pointer]:
+              - /url: /pentapatch-eye-patch-junior-adhesive-band-aid/p/itmcf7334589b3bf?pid=DAIFTJUHPYGZPHDN&lid=LSTDAIFTJUHPYGZPHDNWIM18Z&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_8&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.DAIFTJUHPYGZPHDN.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "PENTAPATCH EYE PATCH JUNIOR Adhesive Band Aid" [ref=e295]
+              - img [ref=e298]
+            - link "PENTAPATCH EYE PATCH JUNIOR Adhesive Band Aid" [ref=e300] [cursor=pointer]:
+              - /url: /pentapatch-eye-patch-junior-adhesive-band-aid/p/itmcf7334589b3bf?pid=DAIFTJUHPYGZPHDN&lid=LSTDAIFTJUHPYGZPHDNWIM18Z&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_8&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.DAIFTJUHPYGZPHDN.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e301]: Set of 1
+            - generic [ref=e302]:
+              - generic [ref=e304]:
+                - text: "4.1"
+                - img [ref=e305]
+              - text: (1,572)
+            - img [ref=e307]
+            - link "₹237 ₹400 40% off" [ref=e308] [cursor=pointer]:
+              - /url: /pentapatch-eye-patch-junior-adhesive-band-aid/p/itmcf7334589b3bf?pid=DAIFTJUHPYGZPHDN&lid=LSTDAIFTJUHPYGZPHDNWIM18Z&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_8&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.DAIFTJUHPYGZPHDN.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e309]:
+                - generic [ref=e310]: ₹237
+                - generic [ref=e311]: ₹400
+                - generic [ref=e312]: 40% off
+            - generic [ref=e315]: Only few left
+        - generic [ref=e317]:
+          - generic [ref=e319]:
+            - link "LORSHEL japani balm | Signature Japanese Massage Edition - Improves Day-to-Day Body Cream" [ref=e320] [cursor=pointer]:
+              - /url: /lorshel-japani-balm-signature-japanese-massage-improves-day-to-day-body-cream/p/itmabb60bf20510d?pid=BPRHKDEGFJHPH7SU&lid=LSTBPRHKDEGFJHPH7SUVDT3TJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_9&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Y97DVg6SC5pB-YTsmAEpVjtkUzUtG7A_Awm0G9Qd699_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "LORSHEL japani balm | Signature Japanese Massage Edition - Improves Day-to-Day Body Cream" [ref=e324]
+              - img [ref=e327]
+            - img [ref=e330]
+            - link "LORSHEL japani balm | Signature Japanese Massage Editio..." [ref=e333] [cursor=pointer]:
+              - /url: /lorshel-japani-balm-signature-japanese-massage-improves-day-to-day-body-cream/p/itmabb60bf20510d?pid=BPRHKDEGFJHPH7SU&lid=LSTBPRHKDEGFJHPH7SUVDT3TJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_9&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Y97DVg6SC5pB-YTsmAEpVjtkUzUtG7A_Awm0G9Qd699_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e334]: 100 ml
+            - generic [ref=e335]:
+              - generic [ref=e337]:
+                - text: "4"
+                - img [ref=e338]
+              - text: (11)
+            - link "₹77 ₹299 74% off" [ref=e339] [cursor=pointer]:
+              - /url: /lorshel-japani-balm-signature-japanese-massage-improves-day-to-day-body-cream/p/itmabb60bf20510d?pid=BPRHKDEGFJHPH7SU&lid=LSTBPRHKDEGFJHPH7SUVDT3TJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_9&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Y97DVg6SC5pB-YTsmAEpVjtkUzUtG7A_Awm0G9Qd699_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e340]:
+                - generic [ref=e341]: ₹77
+                - generic [ref=e342]: ₹299
+                - generic [ref=e343]: 74% off
+          - generic [ref=e345]:
+            - link "Aziderm 10 % Cream (15 gm)" [ref=e346] [cursor=pointer]:
+              - /url: /aziderm-10-cream-15-gm/p/itmde1933d81d096?pid=RXMH3YHXCHM7JJJJ&lid=LSTRXMH3YHXCHM7JJJJPCMJCS&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_10&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.RXMH3YHXCHM7JJJJ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Aziderm 10 % Cream (15 gm)" [ref=e350]
+              - img [ref=e353]
+            - link "Aziderm 10 % Cream (15 gm)" [ref=e355] [cursor=pointer]:
+              - /url: /aziderm-10-cream-15-gm/p/itmde1933d81d096?pid=RXMH3YHXCHM7JJJJ&lid=LSTRXMH3YHXCHM7JJJJPCMJCS&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_10&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.RXMH3YHXCHM7JJJJ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e356]:
+              - generic [ref=e358]:
+                - text: "4.1"
+                - img [ref=e359]
+              - text: (14)
+            - link "₹251 ₹331 24% off" [ref=e360] [cursor=pointer]:
+              - /url: /aziderm-10-cream-15-gm/p/itmde1933d81d096?pid=RXMH3YHXCHM7JJJJ&lid=LSTRXMH3YHXCHM7JJJJPCMJCS&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_10&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.RXMH3YHXCHM7JJJJ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e361]:
+                - generic [ref=e362]: ₹251
+                - generic [ref=e363]: ₹331
+                - generic [ref=e364]: 24% off
+            - generic [ref=e367]: Only few left
+          - generic [ref=e369]:
+            - link "Liora Ultra-Soft, Highly Absorbent Toilet Rolls - 235 Pulls x 10 Rolls Toilet Paper Roll" [ref=e370] [cursor=pointer]:
+              - /url: /liora-ultra-soft-highly-absorbent-toilet-rolls-235-pulls-x-10-paper-roll/p/itm486de4a8d9dcc?pid=TPOHJWDGNWGF5DD4&lid=LSTTPOHJWDGNWGF5DD4MTCU0O&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_11&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4YkUu5d9a_LNKvBW_8C0RAWejRzAIDoLcfSf3RqpcyUtg%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Liora Ultra-Soft, Highly Absorbent Toilet Rolls - 235 Pulls x 10 Rolls Toilet Paper Roll" [ref=e374]
+              - img [ref=e377]
+            - img [ref=e380]
+            - link "Liora Ultra-Soft, Highly Absorbent Toilet Rolls - 235 P..." [ref=e383] [cursor=pointer]:
+              - /url: /liora-ultra-soft-highly-absorbent-toilet-rolls-235-pulls-x-10-paper-roll/p/itm486de4a8d9dcc?pid=TPOHJWDGNWGF5DD4&lid=LSTTPOHJWDGNWGF5DD4MTCU0O&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_11&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4YkUu5d9a_LNKvBW_8C0RAWejRzAIDoLcfSf3RqpcyUtg%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e384]: 3 Ply, 2350 Sheets
+            - generic [ref=e385]:
+              - generic [ref=e387]:
+                - text: "4"
+                - img [ref=e388]
+              - text: (285)
+            - link "₹135 ₹449 69% off" [ref=e389] [cursor=pointer]:
+              - /url: /liora-ultra-soft-highly-absorbent-toilet-rolls-235-pulls-x-10-paper-roll/p/itm486de4a8d9dcc?pid=TPOHJWDGNWGF5DD4&lid=LSTTPOHJWDGNWGF5DD4MTCU0O&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_11&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4YkUu5d9a_LNKvBW_8C0RAWejRzAIDoLcfSf3RqpcyUtg%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e390]:
+                - generic [ref=e391]: ₹135
+                - generic [ref=e392]: ₹449
+                - generic [ref=e393]: 69% off
+            - generic [ref=e396]: Lowest price since launch
+          - generic [ref=e398]:
+            - link "Electvision Original voice remote control for smart 4k android led tv Mi, xiaomi, Redmi Remote Controller" [ref=e399] [cursor=pointer]:
+              - /url: /electvision-original-voice-remote-control-smart-4k-android-led-tv-mi-xiaomi-redmi-controller/p/itmfee537ea63b48?pid=REMHKXZP9TKDUUYM&lid=LSTREMHKXZP9TKDUUYMWSFSQB&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_12&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZqEZUbhpDWBNR0XUT7_3QPwzuyC0v6KVgjes6Na47F9fUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Electvision Original voice remote control for smart 4k android led tv Mi, xiaomi, Redmi Remote Controller" [ref=e403]
+              - img [ref=e406]
+            - img [ref=e409]
+            - link "Electvision Original voice remote control for smart 4k ..." [ref=e412] [cursor=pointer]:
+              - /url: /electvision-original-voice-remote-control-smart-4k-android-led-tv-mi-xiaomi-redmi-controller/p/itmfee537ea63b48?pid=REMHKXZP9TKDUUYM&lid=LSTREMHKXZP9TKDUUYMWSFSQB&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_12&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZqEZUbhpDWBNR0XUT7_3QPwzuyC0v6KVgjes6Na47F9fUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e413]: Black
+            - generic [ref=e414]:
+              - generic [ref=e416]:
+                - text: "4"
+                - img [ref=e417]
+              - text: (261)
+            - img [ref=e419]
+            - link "₹333 ₹999 66% off" [ref=e420] [cursor=pointer]:
+              - /url: /electvision-original-voice-remote-control-smart-4k-android-led-tv-mi-xiaomi-redmi-controller/p/itmfee537ea63b48?pid=REMHKXZP9TKDUUYM&lid=LSTREMHKXZP9TKDUUYMWSFSQB&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_12&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZqEZUbhpDWBNR0XUT7_3QPwzuyC0v6KVgjes6Na47F9fUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e421]:
+                - generic [ref=e422]: ₹333
+                - generic [ref=e423]: ₹999
+                - generic [ref=e424]: 66% off
+        - generic [ref=e426]:
+          - generic [ref=e428]:
+            - link "glyco-6 Glyco 6" [ref=e429] [cursor=pointer]:
+              - /url: /glyco-6-glyco-6/p/itm75a6eece424f3?pid=KMTHH2GXFGY53YRG&lid=LSTKMTHH2GXFGY53YRGVYLQXT&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_13&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.KMTHH2GXFGY53YRG.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "glyco-6 Glyco 6" [ref=e433]
+              - img [ref=e436]
+            - link "glyco-6 Glyco 6" [ref=e438] [cursor=pointer]:
+              - /url: /glyco-6-glyco-6/p/itm75a6eece424f3?pid=KMTHH2GXFGY53YRG&lid=LSTKMTHH2GXFGY53YRGVYLQXT&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_13&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.KMTHH2GXFGY53YRG.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e439]: 30 g
+            - generic [ref=e440]:
+              - generic [ref=e442]:
+                - text: "4.2"
+                - img [ref=e443]
+              - text: (5)
+            - link "₹125 ₹226 44% off" [ref=e444] [cursor=pointer]:
+              - /url: /glyco-6-glyco-6/p/itm75a6eece424f3?pid=KMTHH2GXFGY53YRG&lid=LSTKMTHH2GXFGY53YRGVYLQXT&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_13&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.KMTHH2GXFGY53YRG.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e445]:
+                - generic [ref=e446]: ₹125
+                - generic [ref=e447]: ₹226
+                - generic [ref=e448]: 44% off
+            - generic [ref=e451]: Only few left
+          - generic [ref=e453]:
+            - link "NIBAR Screen Cleaner Gel for Computers, Laptops, Mobiles, Gaming" [ref=e454] [cursor=pointer]:
+              - /url: /nibar-screen-cleaner-gel-computers-laptops-mobiles-gaming/p/itm89ddd3a66d43e?pid=CLKGHQYZRMGAVAYQ&lid=LSTCLKGHQYZRMGAVAYQ0ZGCPJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_14&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.CLKGHQYZRMGAVAYQ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "NIBAR Screen Cleaner Gel for Computers, Laptops, Mobiles, Gaming" [ref=e458]
+              - img [ref=e461]
+            - link "NIBAR Screen Cleaner Gel for Computers, Laptops, Mobile..." [ref=e463] [cursor=pointer]:
+              - /url: /nibar-screen-cleaner-gel-computers-laptops-mobiles-gaming/p/itm89ddd3a66d43e?pid=CLKGHQYZRMGAVAYQ&lid=LSTCLKGHQYZRMGAVAYQ0ZGCPJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_14&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.CLKGHQYZRMGAVAYQ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e464]: NB003
+            - generic [ref=e465]:
+              - generic [ref=e467]:
+                - text: "4"
+                - img [ref=e468]
+              - text: (1,284)
+            - link "₹121 ₹599 79% off" [ref=e469] [cursor=pointer]:
+              - /url: /nibar-screen-cleaner-gel-computers-laptops-mobiles-gaming/p/itm89ddd3a66d43e?pid=CLKGHQYZRMGAVAYQ&lid=LSTCLKGHQYZRMGAVAYQ0ZGCPJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_14&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.CLKGHQYZRMGAVAYQ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e470]:
+                - generic [ref=e471]: ₹121
+                - generic [ref=e472]: ₹599
+                - generic [ref=e473]: 79% off
+            - generic [ref=e476]: Only few left
+          - generic [ref=e478]:
+            - link "SCENTORA Rat Repellent Spray for Cars, No Entry Rat Repellent Car Spray for Cars" [ref=e479] [cursor=pointer]:
+              - /url: /scentora-rat-repellent-spray-cars-no-entry-car-cars/p/itma3bf1db3d1c24?pid=IRPHCAWCSDMCMRCZ&lid=LSTIRPHCAWCSDMCMRCZPQOESA&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_15&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4bAK4Fm1Ir2ltW0btUBKyaVbJllE3Hrx2UqA8I-zuiUsw%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "SCENTORA Rat Repellent Spray for Cars, No Entry Rat Repellent Car Spray for Cars" [ref=e483]
+              - img [ref=e486]
+            - img [ref=e489]
+            - link "SCENTORA Rat Repellent Spray for Cars, No Entry Rat Rep..." [ref=e492] [cursor=pointer]:
+              - /url: /scentora-rat-repellent-spray-cars-no-entry-car-cars/p/itma3bf1db3d1c24?pid=IRPHCAWCSDMCMRCZ&lid=LSTIRPHCAWCSDMCMRCZPQOESA&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_15&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4bAK4Fm1Ir2ltW0btUBKyaVbJllE3Hrx2UqA8I-zuiUsw%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e493]: 2 x 100 ml
+            - generic [ref=e494]:
+              - generic [ref=e496]:
+                - text: "4.1"
+                - img [ref=e497]
+              - text: (1,164)
+            - img [ref=e499]
+            - link "₹154 ₹999 84% off" [ref=e500] [cursor=pointer]:
+              - /url: /scentora-rat-repellent-spray-cars-no-entry-car-cars/p/itma3bf1db3d1c24?pid=IRPHCAWCSDMCMRCZ&lid=LSTIRPHCAWCSDMCMRCZPQOESA&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_15&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4bAK4Fm1Ir2ltW0btUBKyaVbJllE3Hrx2UqA8I-zuiUsw%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e501]:
+                - generic [ref=e502]: ₹154
+                - generic [ref=e503]: ₹999
+                - generic [ref=e504]: 84% off
+            - generic [ref=e507]: Lowest price in the year
+          - generic [ref=e509]:
+            - link "CRETO Heating Pad Gel Full Body Pain Reliever Electric 1 L Hot Water Bag" [ref=e510] [cursor=pointer]:
+              - /url: /creto-heating-pad-gel-full-body-pain-reliever-electric-1-l-hot-water-bag/p/itm2606185731806?pid=HWBGVYEZ5ZZDGMQQ&lid=LSTHWBGVYEZ5ZZDGMQQ8C1O9D&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_16&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.HWBGVYEZ5ZZDGMQQ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "CRETO Heating Pad Gel Full Body Pain Reliever Electric 1 L Hot Water Bag" [ref=e514]
+              - img [ref=e517]
+            - link "CRETO Heating Pad Gel Full Body Pain Reliever Electric ..." [ref=e519] [cursor=pointer]:
+              - /url: /creto-heating-pad-gel-full-body-pain-reliever-electric-1-l-hot-water-bag/p/itm2606185731806?pid=HWBGVYEZ5ZZDGMQQ&lid=LSTHWBGVYEZ5ZZDGMQQ8C1O9D&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_16&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.HWBGVYEZ5ZZDGMQQ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e520]: Multicolor
+            - generic [ref=e521]:
+              - generic [ref=e523]:
+                - text: "4.3"
+                - img [ref=e524]
+              - text: (27,966)
+            - img [ref=e526]
+            - link "₹170 ₹999 82% off" [ref=e527] [cursor=pointer]:
+              - /url: /creto-heating-pad-gel-full-body-pain-reliever-electric-1-l-hot-water-bag/p/itm2606185731806?pid=HWBGVYEZ5ZZDGMQQ&lid=LSTHWBGVYEZ5ZZDGMQQ8C1O9D&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_16&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.HWBGVYEZ5ZZDGMQQ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e528]:
+                - generic [ref=e529]: ₹170
+                - generic [ref=e530]: ₹999
+                - generic [ref=e531]: 82% off
+            - generic [ref=e534]: GRWM Deals
+        - generic [ref=e536]:
+          - generic [ref=e538]:
+            - link "AR Nutrition Vedacure 100% Authentic Herbal & Gentle Ingredients Detox Foot Pads Plaster & Patch" [ref=e539] [cursor=pointer]:
+              - /url: /ar-nutrition-vedacure-100-authentic-herbal-gentle-ingredients-detox-foot-pads-plaster-patch/p/itm7e5f1f7165de0?pid=BPRHMX3CGRH8NKBJ&lid=LSTBPRHMX3CGRH8NKBJDO6JTJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_17&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZH8xQxy8o_zOxpddlGI7-Zc3Wjsiakmg85-H-Gqlqh-w%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "AR Nutrition Vedacure 100% Authentic Herbal & Gentle Ingredients Detox Foot Pads Plaster & Patch" [ref=e543]
+              - img [ref=e546]
+            - img [ref=e549]
+            - link "AR Nutrition Vedacure 100% Authentic Herbal & Gentle In..." [ref=e552] [cursor=pointer]:
+              - /url: /ar-nutrition-vedacure-100-authentic-herbal-gentle-ingredients-detox-foot-pads-plaster-patch/p/itm7e5f1f7165de0?pid=BPRHMX3CGRH8NKBJ&lid=LSTBPRHMX3CGRH8NKBJDO6JTJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_17&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZH8xQxy8o_zOxpddlGI7-Zc3Wjsiakmg85-H-Gqlqh-w%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e553]: 10 x 2 Patches
+            - generic [ref=e554]:
+              - generic [ref=e556]:
+                - text: "4.2"
+                - img [ref=e557]
+              - text: (16)
+            - link "₹141 ₹499 71% off" [ref=e558] [cursor=pointer]:
+              - /url: /ar-nutrition-vedacure-100-authentic-herbal-gentle-ingredients-detox-foot-pads-plaster-patch/p/itm7e5f1f7165de0?pid=BPRHMX3CGRH8NKBJ&lid=LSTBPRHMX3CGRH8NKBJDO6JTJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_17&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZH8xQxy8o_zOxpddlGI7-Zc3Wjsiakmg85-H-Gqlqh-w%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e559]:
+                - generic [ref=e560]: ₹141
+                - generic [ref=e561]: ₹499
+                - generic [ref=e562]: 71% off
+            - generic [ref=e565]: Lowest Price Live
+          - generic [ref=e567]:
+            - link "MAKFIRST Japanese Massage Gel For Instant Pain Relief For Bady Pain relief Gel" [ref=e568] [cursor=pointer]:
+              - /url: /makfirst-japanese-massage-gel-instant-pain-relief-bady/p/itmca12e7371c062?pid=BPRHH2CSKZWKAGYY&lid=LSTBPRHH2CSKZWKAGYYAV2S5T&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_18&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4blmq43TcSEnfd11qr2hNyIpUV9Y_NkUntbLzRZVI5ePPUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "MAKFIRST Japanese Massage Gel For Instant Pain Relief For Bady Pain relief Gel" [ref=e572]
+              - img [ref=e575]
+            - img [ref=e578]
+            - link "MAKFIRST Japanese Massage Gel For Instant Pain Relief F..." [ref=e581] [cursor=pointer]:
+              - /url: /makfirst-japanese-massage-gel-instant-pain-relief-bady/p/itmca12e7371c062?pid=BPRHH2CSKZWKAGYY&lid=LSTBPRHH2CSKZWKAGYYAV2S5T&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_18&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4blmq43TcSEnfd11qr2hNyIpUV9Y_NkUntbLzRZVI5ePPUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e582]: 100 g
+            - generic [ref=e583]:
+              - generic [ref=e585]:
+                - text: "3.8"
+                - img [ref=e586]
+              - text: (407)
+            - img [ref=e588]
+            - link "₹120 ₹799 84% off" [ref=e589] [cursor=pointer]:
+              - /url: /makfirst-japanese-massage-gel-instant-pain-relief-bady/p/itmca12e7371c062?pid=BPRHH2CSKZWKAGYY&lid=LSTBPRHH2CSKZWKAGYYAV2S5T&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_18&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4blmq43TcSEnfd11qr2hNyIpUV9Y_NkUntbLzRZVI5ePPUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e590]:
+                - generic [ref=e591]: ₹120
+                - generic [ref=e592]: ₹799
+                - generic [ref=e593]: 84% off
+          - generic [ref=e595]:
+            - link "Dr. Morepen Round pack of 100 Glucometer Lancets" [ref=e596] [cursor=pointer]:
+              - /url: /dr-morepen-round-pack-100-glucometer-lancets/p/itm4e085dae38a14?pid=GLCHDMMYVUWZ3PZH&lid=LSTGLCHDMMYVUWZ3PZHONW6JQ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_19&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.GLCHDMMYVUWZ3PZH.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Dr. Morepen Round pack of 100 Glucometer Lancets" [ref=e600]
+              - img [ref=e603]
+            - link "Dr. Morepen Round pack of 100 Glucometer Lancets" [ref=e605] [cursor=pointer]:
+              - /url: /dr-morepen-round-pack-100-glucometer-lancets/p/itm4e085dae38a14?pid=GLCHDMMYVUWZ3PZH&lid=LSTGLCHDMMYVUWZ3PZHONW6JQ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_19&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.GLCHDMMYVUWZ3PZH.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e606]: "100"
+            - generic [ref=e607]:
+              - generic [ref=e609]:
+                - text: "4.2"
+                - img [ref=e610]
+              - text: (1,097)
+            - link "₹179 ₹350 48% off" [ref=e611] [cursor=pointer]:
+              - /url: /dr-morepen-round-pack-100-glucometer-lancets/p/itm4e085dae38a14?pid=GLCHDMMYVUWZ3PZH&lid=LSTGLCHDMMYVUWZ3PZHONW6JQ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_19&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.GLCHDMMYVUWZ3PZH.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e612]:
+                - generic [ref=e613]: ₹179
+                - generic [ref=e614]: ₹350
+                - generic [ref=e615]: 48% off
+            - generic [ref=e618]: Only few left
+          - generic [ref=e620]:
+            - link "Railway Maths Sampoorn Manthan/Hindi Medium By Gagan Pratap Sir (3600+ Concept + Chapter-Wise, Typewise, PYQs) For RRB NTPC, RRB ALP, Technician, RRB JE, RRB Group D, RPF SI & Constable, Section Controller" [ref=e621] [cursor=pointer]:
+              - /url: /railway-maths-sampoorn-manthan-hindi-medium-gagan-pratap-sir-3600-concept-chapter-wise-typewise-pyqs-rrb-ntpc-alp-technician-je-group-d-rpf-si-constable-section-controller/p/itm9bf192596aa24?pid=RBKHMP5NBZZSGZBF&lid=LSTRBKHMP5NBZZSGZBFJ4OH6V&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_20&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.RBKHMP5NBZZSGZBF.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Railway Maths Sampoorn Manthan/Hindi Medium By Gagan Pratap Sir (3600+ Concept + Chapter-Wise, Typewise, PYQs) For RRB NTPC, RRB ALP, Technician, RRB JE, RRB Group D, RPF SI & Constable, Section Controller" [ref=e625]
+              - img [ref=e628]
+            - link "Railway Maths Sampoorn Manthan/Hindi Medium By Gagan Pr..." [ref=e630] [cursor=pointer]:
+              - /url: /railway-maths-sampoorn-manthan-hindi-medium-gagan-pratap-sir-3600-concept-chapter-wise-typewise-pyqs-rrb-ntpc-alp-technician-je-group-d-rpf-si-constable-section-controller/p/itm9bf192596aa24?pid=RBKHMP5NBZZSGZBF&lid=LSTRBKHMP5NBZZSGZBFJ4OH6V&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_20&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.RBKHMP5NBZZSGZBF.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e631]: Hardcover, Hindi, GAGAN PRATAP
+            - generic [ref=e632]:
+              - generic [ref=e634]:
+                - text: "4.4"
+                - img [ref=e635]
+              - text: (1,351)
+            - img [ref=e637]
+            - link "₹207 ₹349 40% off" [ref=e638] [cursor=pointer]:
+              - /url: /railway-maths-sampoorn-manthan-hindi-medium-gagan-pratap-sir-3600-concept-chapter-wise-typewise-pyqs-rrb-ntpc-alp-technician-je-group-d-rpf-si-constable-section-controller/p/itm9bf192596aa24?pid=RBKHMP5NBZZSGZBF&lid=LSTRBKHMP5NBZZSGZBFJ4OH6V&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_20&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.RBKHMP5NBZZSGZBF.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e639]:
+                - generic [ref=e640]: ₹207
+                - generic [ref=e641]: ₹349
+                - generic [ref=e642]: 40% off
+            - generic [ref=e645]: Only few left
+        - generic [ref=e647]:
+          - generic [ref=e649]:
+            - link "Ureka Foot pads weight loss |Overnight Detox Action For Enhanced Pain Relief Action Plaster & Patch" [ref=e650] [cursor=pointer]:
+              - /url: /ureka-foot-pads-weight-loss-overnight-detox-action-enhanced-pain-relief-plaster-patch/p/itm5e3ae1e1967f6?pid=BPRHGNXVHSUZQ6SM&lid=LSTBPRHGNXVHSUZQ6SMSVJRLV&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_21&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4bKN8QKc2pt_w3o9bYh01EvWK7qdItCtAkN3x6rBv3VivUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Ureka Foot pads weight loss |Overnight Detox Action For Enhanced Pain Relief Action Plaster & Patch" [ref=e654]
+              - img [ref=e657]
+            - img [ref=e660]
+            - link "Ureka Foot pads weight loss |Overnight Detox Action For..." [ref=e663] [cursor=pointer]:
+              - /url: /ureka-foot-pads-weight-loss-overnight-detox-action-enhanced-pain-relief-plaster-patch/p/itm5e3ae1e1967f6?pid=BPRHGNXVHSUZQ6SM&lid=LSTBPRHGNXVHSUZQ6SMSVJRLV&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_21&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4bKN8QKc2pt_w3o9bYh01EvWK7qdItCtAkN3x6rBv3VivUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e664]: 10 x 1 g
+            - generic [ref=e665]:
+              - generic [ref=e667]:
+                - text: "3.9"
+                - img [ref=e668]
+              - text: (1,384)
+            - img [ref=e670]
+            - link "₹118 ₹450 73% off" [ref=e671] [cursor=pointer]:
+              - /url: /ureka-foot-pads-weight-loss-overnight-detox-action-enhanced-pain-relief-plaster-patch/p/itm5e3ae1e1967f6?pid=BPRHGNXVHSUZQ6SM&lid=LSTBPRHGNXVHSUZQ6SMSVJRLV&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_21&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4bKN8QKc2pt_w3o9bYh01EvWK7qdItCtAkN3x6rBv3VivUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e672]:
+                - generic [ref=e673]: ₹118
+                - generic [ref=e674]: ₹450
+                - generic [ref=e675]: 73% off
+          - generic [ref=e677]:
+            - link "Emolene Propylene Glycol (hydronourisher for dry skin) Cream" [ref=e678] [cursor=pointer]:
+              - /url: /emolene-propylene-glycol-hydronourisher-dry-skin-cream/p/itm00a42f134e165?pid=ALOHHSG4JVDKVRBZ&lid=LSTALOHHSG4JVDKVRBZHU4NZS&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_22&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZpE7XY7YpZHtp41TMGnAt4hwCkZbcvLD4kWy37YYWaqQ%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Emolene Propylene Glycol (hydronourisher for dry skin) Cream" [ref=e682]
+              - img [ref=e685]
+            - img [ref=e688]
+            - link "Emolene Propylene Glycol (hydronourisher for dry skin) ..." [ref=e691] [cursor=pointer]:
+              - /url: /emolene-propylene-glycol-hydronourisher-dry-skin-cream/p/itm00a42f134e165?pid=ALOHHSG4JVDKVRBZ&lid=LSTALOHHSG4JVDKVRBZHU4NZS&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_22&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZpE7XY7YpZHtp41TMGnAt4hwCkZbcvLD4kWy37YYWaqQ%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e692]: 100 g
+            - generic [ref=e693]:
+              - generic [ref=e695]:
+                - text: "4.3"
+                - img [ref=e696]
+              - text: (5,507)
+            - img [ref=e698]
+            - link "₹341 ₹420 18% off" [ref=e699] [cursor=pointer]:
+              - /url: /emolene-propylene-glycol-hydronourisher-dry-skin-cream/p/itm00a42f134e165?pid=ALOHHSG4JVDKVRBZ&lid=LSTALOHHSG4JVDKVRBZHU4NZS&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_22&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZpE7XY7YpZHtp41TMGnAt4hwCkZbcvLD4kWy37YYWaqQ%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e700]:
+                - generic [ref=e701]: ₹341
+                - generic [ref=e702]: ₹420
+                - generic [ref=e703]: 18% off
+          - generic [ref=e705]:
+            - link "One Touch Select Health Care Appliance Combo" [ref=e706] [cursor=pointer]:
+              - /url: /one-touch-select-health-care-appliance-combo/p/itmaf78724d28453?pid=HROGBFZS5TFNPCZX&lid=LSTHROGBFZS5TFNPCZXAKXM1L&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_23&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.HROGBFZS5TFNPCZX.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "One Touch Select Health Care Appliance Combo" [ref=e710]
+              - img [ref=e713]
+            - link "One Touch Select Health Care Appliance Combo" [ref=e715] [cursor=pointer]:
+              - /url: /one-touch-select-health-care-appliance-combo/p/itmaf78724d28453?pid=HROGBFZS5TFNPCZX&lid=LSTHROGBFZS5TFNPCZXAKXM1L&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_23&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.HROGBFZS5TFNPCZX.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e716]:
+              - generic [ref=e718]:
+                - text: "4.5"
+                - img [ref=e719]
+              - text: (226)
+            - img [ref=e721]
+            - link "₹900 ₹1,399 35% off" [ref=e722] [cursor=pointer]:
+              - /url: /one-touch-select-health-care-appliance-combo/p/itmaf78724d28453?pid=HROGBFZS5TFNPCZX&lid=LSTHROGBFZS5TFNPCZXAKXM1L&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_23&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.HROGBFZS5TFNPCZX.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e723]:
+                - generic [ref=e724]: ₹900
+                - generic [ref=e725]: ₹1,399
+                - generic [ref=e726]: 35% off
+            - generic [ref=e729]: Only few left
+          - generic [ref=e731]:
+            - link "Dish TV Hd remote Dish tv Remote Controller" [ref=e732] [cursor=pointer]:
+              - /url: /dish-tv-hd-remote-controller/p/itm254ed5c1c148d?pid=REMFNXG3Z5NXXNWZ&lid=LSTREMFNXG3Z5NXXNWZT0QBDF&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_24&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.REMFNXG3Z5NXXNWZ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Dish TV Hd remote Dish tv Remote Controller" [ref=e736]
+              - img [ref=e739]
+            - link "Dish TV Hd remote Dish tv Remote Controller" [ref=e741] [cursor=pointer]:
+              - /url: /dish-tv-hd-remote-controller/p/itm254ed5c1c148d?pid=REMFNXG3Z5NXXNWZ&lid=LSTREMFNXG3Z5NXXNWZT0QBDF&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_24&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.REMFNXG3Z5NXXNWZ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e742]: Black
+            - generic [ref=e743]:
+              - generic [ref=e745]:
+                - text: "4.1"
+                - img [ref=e746]
+              - text: (1,480)
+            - img [ref=e748]
+            - link "₹173 ₹399 56% off" [ref=e749] [cursor=pointer]:
+              - /url: /dish-tv-hd-remote-controller/p/itm254ed5c1c148d?pid=REMFNXG3Z5NXXNWZ&lid=LSTREMFNXG3Z5NXXNWZT0QBDF&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_24&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.REMFNXG3Z5NXXNWZ.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e750]:
+                - generic [ref=e751]: ₹173
+                - generic [ref=e752]: ₹399
+                - generic [ref=e753]: 56% off
+            - generic [ref=e756]: Only few left
+        - generic [ref=e758]:
+          - generic [ref=e760]:
+            - link "FOXURO Foot Detoxs Herbal Patch | Pain Relief & Sleep Aid (Pack of 40) Plaster & Patch" [ref=e761] [cursor=pointer]:
+              - /url: /foxuro-foot-detoxs-herbal-patch-pain-relief-sleep-aid-pack-40-plaster/p/itmbe6e10d5d8456?pid=KMTHNYRUGBRSFKHJ&lid=LSTKMTHNYRUGBRSFKHJKC2SA7&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_25&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Zu5MijVL9h49I6kwD5QvFHV_cbRhcYe16e_I9MeLDE2g%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "FOXURO Foot Detoxs Herbal Patch | Pain Relief & Sleep Aid (Pack of 40) Plaster & Patch" [ref=e765]
+              - img [ref=e768]
+            - img [ref=e771]
+            - link "FOXURO Foot Detoxs Herbal Patch | Pain Relief & Sleep A..." [ref=e774] [cursor=pointer]:
+              - /url: /foxuro-foot-detoxs-herbal-patch-pain-relief-sleep-aid-pack-40-plaster/p/itmbe6e10d5d8456?pid=KMTHNYRUGBRSFKHJ&lid=LSTKMTHNYRUGBRSFKHJKC2SA7&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_25&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Zu5MijVL9h49I6kwD5QvFHV_cbRhcYe16e_I9MeLDE2g%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e775]: 200 g
+            - generic [ref=e776]:
+              - generic [ref=e778]:
+                - text: "4.8"
+                - img [ref=e779]
+              - text: (82)
+            - link "₹215 ₹499 56% off" [ref=e780] [cursor=pointer]:
+              - /url: /foxuro-foot-detoxs-herbal-patch-pain-relief-sleep-aid-pack-40-plaster/p/itmbe6e10d5d8456?pid=KMTHNYRUGBRSFKHJ&lid=LSTKMTHNYRUGBRSFKHJKC2SA7&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_25&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Zu5MijVL9h49I6kwD5QvFHV_cbRhcYe16e_I9MeLDE2g%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e781]:
+                - generic [ref=e782]: ₹215
+                - generic [ref=e783]: ₹499
+                - generic [ref=e784]: 56% off
+            - generic [ref=e787]: Lowest price since launch
+          - generic [ref=e789]:
+            - link "SMULY Gaming and Spiderman, NonSlip Rubber Base (Spiderman) Non Slip Base Mousepad" [ref=e790] [cursor=pointer]:
+              - /url: /smuly-gaming-spiderman-nonslip-rubber-base-spiderman-non-slip-mousepad/p/itmf238168d9cf59?pid=ACCHBZNZHJEW7363&lid=LSTACCHBZNZHJEW7363VVPZTM&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_26&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCHBZNZHJEW7363.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "SMULY Gaming and Spiderman, NonSlip Rubber Base (Spiderman) Non Slip Base Mousepad" [ref=e794]
+              - img [ref=e797]
+            - link "SMULY Gaming and Spiderman, NonSlip Rubber Base (Spider..." [ref=e799] [cursor=pointer]:
+              - /url: /smuly-gaming-spiderman-nonslip-rubber-base-spiderman-non-slip-mousepad/p/itmf238168d9cf59?pid=ACCHBZNZHJEW7363&lid=LSTACCHBZNZHJEW7363VVPZTM&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_26&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCHBZNZHJEW7363.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e800]: Multicolor
+            - generic [ref=e801]:
+              - generic [ref=e803]:
+                - text: "4.4"
+                - img [ref=e804]
+              - text: (850)
+            - img [ref=e806]
+            - link "₹198 ₹1,299 84% off" [ref=e807] [cursor=pointer]:
+              - /url: /smuly-gaming-spiderman-nonslip-rubber-base-spiderman-non-slip-mousepad/p/itmf238168d9cf59?pid=ACCHBZNZHJEW7363&lid=LSTACCHBZNZHJEW7363VVPZTM&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_26&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCHBZNZHJEW7363.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e808]:
+                - generic [ref=e809]: ₹198
+                - generic [ref=e810]: ₹1,299
+                - generic [ref=e811]: 84% off
+            - generic [ref=e814]: Saver Deal
+          - generic [ref=e816]:
+            - link "FLORIMYST Detox Foot Pads Overnight Foot for Pain Relief Weight Control Wellness Plaster & Patch" [ref=e817] [cursor=pointer]:
+              - /url: /florimyst-detox-foot-pads-overnight-pain-relief-weight-control-wellness-plaster-patch/p/itm4c653eca01095?pid=BPRHJ3FZUCPKVVSR&lid=LSTBPRHJ3FZUCPKVVSRWLOZLH&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_27&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZJjy0HPbl3ZuI9rs0Llq3BGLGUav0sTHK_S9JX6huHWQ%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "FLORIMYST Detox Foot Pads Overnight Foot for Pain Relief Weight Control Wellness Plaster & Patch" [ref=e821]
+              - img [ref=e824]
+            - img [ref=e827]
+            - link "FLORIMYST Detox Foot Pads Overnight Foot for Pain Relie..." [ref=e830] [cursor=pointer]:
+              - /url: /florimyst-detox-foot-pads-overnight-pain-relief-weight-control-wellness-plaster-patch/p/itm4c653eca01095?pid=BPRHJ3FZUCPKVVSR&lid=LSTBPRHJ3FZUCPKVVSRWLOZLH&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_27&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZJjy0HPbl3ZuI9rs0Llq3BGLGUav0sTHK_S9JX6huHWQ%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e831]: 10 Patches
+            - generic [ref=e832]:
+              - generic [ref=e834]:
+                - text: "4.2"
+                - img [ref=e835]
+              - text: (299)
+            - img [ref=e837]
+            - link "₹117 ₹699 83% off" [ref=e838] [cursor=pointer]:
+              - /url: /florimyst-detox-foot-pads-overnight-pain-relief-weight-control-wellness-plaster-patch/p/itm4c653eca01095?pid=BPRHJ3FZUCPKVVSR&lid=LSTBPRHJ3FZUCPKVVSRWLOZLH&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_27&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZJjy0HPbl3ZuI9rs0Llq3BGLGUav0sTHK_S9JX6huHWQ%3D%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e839]:
+                - generic [ref=e840]: ₹117
+                - generic [ref=e841]: ₹699
+                - generic [ref=e842]: 83% off
+            - generic [ref=e845]: Saver Deal
+          - generic [ref=e847]:
+            - link "Electvision Remote Control for Ac Compatible with AC (Please Match The Image with Your Existing Remote Before Placing The Order Before)(133B) VOLTAS (WiFi) Remote Controller" [ref=e848] [cursor=pointer]:
+              - /url: /electvision-remote-control-ac-compatible-please-match-image-your-existing-before-placing-order-before-133b-voltas-wifi-controller/p/itmd88cb7106cc0c?pid=REMG2QQK3FPB3EWY&lid=LSTREMG2QQK3FPB3EWYJFPXBP&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_28&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZNqUszYAWgvY7ZbE_AqOPSe30SVSqbfjyIvW5DR_QNyfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Electvision Remote Control for Ac Compatible with AC (Please Match The Image with Your Existing Remote Before Placing The Order Before)(133B) VOLTAS (WiFi) Remote Controller" [ref=e852]
+              - img [ref=e855]
+            - img [ref=e858]
+            - link "Electvision Remote Control for Ac Compatible with AC (..." [ref=e861] [cursor=pointer]:
+              - /url: /electvision-remote-control-ac-compatible-please-match-image-your-existing-before-placing-order-before-133b-voltas-wifi-controller/p/itmd88cb7106cc0c?pid=REMG2QQK3FPB3EWY&lid=LSTREMG2QQK3FPB3EWYJFPXBP&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_28&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZNqUszYAWgvY7ZbE_AqOPSe30SVSqbfjyIvW5DR_QNyfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e862]: White
+            - generic [ref=e863]:
+              - generic [ref=e865]:
+                - text: "4.2"
+                - img [ref=e866]
+              - text: (142)
+            - img [ref=e868]
+            - link "₹261 ₹549 52% off" [ref=e869] [cursor=pointer]:
+              - /url: /electvision-remote-control-ac-compatible-please-match-image-your-existing-before-placing-order-before-133b-voltas-wifi-controller/p/itmd88cb7106cc0c?pid=REMG2QQK3FPB3EWY&lid=LSTREMG2QQK3FPB3EWYJFPXBP&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_28&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4ZNqUszYAWgvY7ZbE_AqOPSe30SVSqbfjyIvW5DR_QNyfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e870]:
+                - generic [ref=e871]: ₹261
+                - generic [ref=e872]: ₹549
+                - generic [ref=e873]: 52% off
+        - generic [ref=e875]:
+          - generic [ref=e877]:
+            - link "Mylo LactoMama Lactation Granules with Shatavari, Breast Milk Quality- Elaichi Flavor" [ref=e878] [cursor=pointer]:
+              - /url: /mylo-lactomama-lactation-granules-shatavari-breast-milk-quality-elaichi-flavor/p/itm4f38d89179ad9?pid=AYDH5PA6YNDJTNQH&lid=LSTAYDH5PA6YNDJTNQHY0UYDI&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_29&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.AYDH5PA6YNDJTNQH.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Mylo LactoMama Lactation Granules with Shatavari, Breast Milk Quality- Elaichi Flavor" [ref=e882]
+              - img [ref=e885]
+            - link "Mylo LactoMama Lactation Granules with Shatavari, Breas..." [ref=e887] [cursor=pointer]:
+              - /url: /mylo-lactomama-lactation-granules-shatavari-breast-milk-quality-elaichi-flavor/p/itm4f38d89179ad9?pid=AYDH5PA6YNDJTNQH&lid=LSTAYDH5PA6YNDJTNQHY0UYDI&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_29&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.AYDH5PA6YNDJTNQH.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e888]: 300 g
+            - generic [ref=e889]:
+              - generic [ref=e891]:
+                - text: "4.3"
+                - img [ref=e892]
+              - text: (15,848)
+            - img [ref=e894]
+            - link "₹499 ₹699 28% off" [ref=e895] [cursor=pointer]:
+              - /url: /mylo-lactomama-lactation-granules-shatavari-breast-milk-quality-elaichi-flavor/p/itm4f38d89179ad9?pid=AYDH5PA6YNDJTNQH&lid=LSTAYDH5PA6YNDJTNQHY0UYDI&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_29&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.AYDH5PA6YNDJTNQH.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e896]:
+                - generic [ref=e897]: ₹499
+                - generic [ref=e898]: ₹699
+                - generic [ref=e899]: 28% off
+            - generic [ref=e902]: Buy 2 items, save extra ₹20
+          - generic [ref=e904]:
+            - link "Flipkart SmartBuy TC-M500 Ergonomic Optical Mouse" [ref=e905] [cursor=pointer]:
+              - /url: /flipkart-smartbuy-tc-m500-ergonomic-optical-mouse/p/itm1d606a891bdf0?pid=ACCHBFVKCBSTE37J&lid=LSTACCHBFVKCBSTE37JD2GUO0&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_30&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCHBFVKCBSTE37J.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Flipkart SmartBuy TC-M500 Ergonomic Optical Mouse" [ref=e909]
+              - img [ref=e912]
+            - link "Flipkart SmartBuy TC-M500 Ergonomic Optical Mouse" [ref=e914] [cursor=pointer]:
+              - /url: /flipkart-smartbuy-tc-m500-ergonomic-optical-mouse/p/itm1d606a891bdf0?pid=ACCHBFVKCBSTE37J&lid=LSTACCHBFVKCBSTE37JD2GUO0&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_30&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCHBFVKCBSTE37J.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e915]: 2.4GHz Wireless, Bluetooth, Black
+            - generic [ref=e916]:
+              - generic [ref=e918]:
+                - text: "4.3"
+                - img [ref=e919]
+              - text: (31,899)
+            - img [ref=e921]
+            - link "₹315 ₹999 68% off" [ref=e922] [cursor=pointer]:
+              - /url: /flipkart-smartbuy-tc-m500-ergonomic-optical-mouse/p/itm1d606a891bdf0?pid=ACCHBFVKCBSTE37J&lid=LSTACCHBFVKCBSTE37JD2GUO0&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_30&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCHBFVKCBSTE37J.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e923]:
+                - generic [ref=e924]: ₹315
+                - generic [ref=e925]: ₹999
+                - generic [ref=e926]: 68% off
+          - generic [ref=e928]:
+            - link "Electvision Original Ac remote control Daikin Remote Controller" [ref=e929] [cursor=pointer]:
+              - /url: /electvision-original-ac-remote-control-daikin-controller/p/itm80d6d7988b932?pid=REMHKWZ2WRBBPQEP&lid=LSTREMHKWZ2WRBBPQEPZWWAU0&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_31&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Z7IXrbr4IuADFVOQix1sNzwE4yuOe9FJXqR44OWTsvO_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Electvision Original Ac remote control Daikin Remote Controller" [ref=e933]
+              - img [ref=e936]
+            - img [ref=e939]
+            - link "Electvision Original Ac remote control Daikin Remote Co..." [ref=e942] [cursor=pointer]:
+              - /url: /electvision-original-ac-remote-control-daikin-controller/p/itm80d6d7988b932?pid=REMHKWZ2WRBBPQEP&lid=LSTREMHKWZ2WRBBPQEPZWWAU0&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_31&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Z7IXrbr4IuADFVOQix1sNzwE4yuOe9FJXqR44OWTsvO_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e943]: White
+            - generic [ref=e944]:
+              - generic [ref=e946]:
+                - text: "3.6"
+                - img [ref=e947]
+              - text: (144)
+            - link "₹248 ₹999 75% off" [ref=e948] [cursor=pointer]:
+              - /url: /electvision-original-ac-remote-control-daikin-controller/p/itm80d6d7988b932?pid=REMHKWZ2WRBBPQEP&lid=LSTREMHKWZ2WRBBPQEPZWWAU0&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_31&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Z7IXrbr4IuADFVOQix1sNzwE4yuOe9FJXqR44OWTsvO_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e949]:
+                - generic [ref=e950]: ₹248
+                - generic [ref=e951]: ₹999
+                - generic [ref=e952]: 75% off
+          - generic [ref=e954]:
+            - link "SARTHU 40 CM Extra Long Nylon Bottle Brush And 29 CM Silicone Bottle & Cup Brush" [ref=e955] [cursor=pointer]:
+              - /url: /sarthu-40-cm-extra-long-nylon-bottle-brush-29-silicone-cup/p/itm39d39b3c04336?pid=BCLHJZZ3FG4GWCXZ&lid=LSTBCLHJZZ3FG4GWCXZFOMVMH&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_32&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Z44kTg6UINzTw2oVI6L3Qkvgu90AA3S_4_josPgnLn2_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "SARTHU 40 CM Extra Long Nylon Bottle Brush And 29 CM Silicone Bottle & Cup Brush" [ref=e959]
+              - img [ref=e962]
+            - img [ref=e965]
+            - link "SARTHU 40 CM Extra Long Nylon Bottle Brush And 29 CM Si..." [ref=e968] [cursor=pointer]:
+              - /url: /sarthu-40-cm-extra-long-nylon-bottle-brush-29-silicone-cup/p/itm39d39b3c04336?pid=BCLHJZZ3FG4GWCXZ&lid=LSTBCLHJZZ3FG4GWCXZFOMVMH&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_32&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Z44kTg6UINzTw2oVI6L3Qkvgu90AA3S_4_josPgnLn2_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e969]: Multicolor
+            - generic [ref=e970]:
+              - generic [ref=e972]:
+                - text: "4.1"
+                - img [ref=e973]
+              - text: (91)
+            - img [ref=e975]
+            - link "₹129 ₹399 67% off" [ref=e976] [cursor=pointer]:
+              - /url: /sarthu-40-cm-extra-long-nylon-bottle-brush-29-silicone-cup/p/itm39d39b3c04336?pid=BCLHJZZ3FG4GWCXZ&lid=LSTBCLHJZZ3FG4GWCXZFOMVMH&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_32&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Z44kTg6UINzTw2oVI6L3Qkvgu90AA3S_4_josPgnLn2_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e977]:
+                - generic [ref=e978]: ₹129
+                - generic [ref=e979]: ₹399
+                - generic [ref=e980]: 67% off
+        - generic [ref=e982]:
+          - generic [ref=e984]:
+            - link "Asthakesari Asthma Allergy Syrup" [ref=e985] [cursor=pointer]:
+              - /url: /asthakesari-asthma-allergy-syrup/p/itm885df5f0339b2?pid=AYDGHXYJJGRDK62A&lid=LSTAYDGHXYJJGRDK62APPN6F5&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_33&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.AYDGHXYJJGRDK62A.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Asthakesari Asthma Allergy Syrup" [ref=e989]
+              - img [ref=e992]
+            - link "Asthakesari Asthma Allergy Syrup" [ref=e994] [cursor=pointer]:
+              - /url: /asthakesari-asthma-allergy-syrup/p/itm885df5f0339b2?pid=AYDGHXYJJGRDK62A&lid=LSTAYDGHXYJJGRDK62APPN6F5&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_33&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.AYDGHXYJJGRDK62A.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e995]: 200 ml
+            - generic [ref=e996]:
+              - generic [ref=e998]:
+                - text: "4.2"
+                - img [ref=e999]
+              - text: (1,481)
+            - img [ref=e1001]
+            - link "₹760 ₹949 19% off" [ref=e1002] [cursor=pointer]:
+              - /url: /asthakesari-asthma-allergy-syrup/p/itm885df5f0339b2?pid=AYDGHXYJJGRDK62A&lid=LSTAYDGHXYJJGRDK62APPN6F5&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_33&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.AYDGHXYJJGRDK62A.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1003]:
+                - generic [ref=e1004]: ₹760
+                - generic [ref=e1005]: ₹949
+                - generic [ref=e1006]: 19% off
+            - generic [ref=e1009]: Only few left
+          - generic [ref=e1011]:
+            - link "Mi Original Mi X Pro, X series, Mi 5A Voice Remote Control with Google for Android (Bluetooth Remote) For Device Mi Android TV, Mi tv, Xiaomi Redmi Mi Smart Tv, MI Smart TV 4A Remote Controller" [ref=e1012] [cursor=pointer]:
+              - /url: /mi-original-x-pro-series-5a-voice-remote-control-google-android-bluetooth-remote-device-tv-xiaomi-redmi-smart-tv-4a-controller/p/itmaaf3796ab4892?pid=REMHHEYZWRQV9Q7S&lid=LSTREMHHEYZWRQV9Q7SLH9PIM&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_34&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.REMHHEYZWRQV9Q7S.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Mi Original Mi X Pro, X series, Mi 5A Voice Remote Control with Google for Android (Bluetooth Remote) For Device Mi Android TV, Mi tv, Xiaomi Redmi Mi Smart Tv, MI Smart TV 4A Remote Controller" [ref=e1016]
+              - img [ref=e1019]
+            - link "Mi Original Mi X Pro, X series, Mi 5A Voice Remote Cont..." [ref=e1021] [cursor=pointer]:
+              - /url: /mi-original-x-pro-series-5a-voice-remote-control-google-android-bluetooth-remote-device-tv-xiaomi-redmi-smart-tv-4a-controller/p/itmaaf3796ab4892?pid=REMHHEYZWRQV9Q7S&lid=LSTREMHHEYZWRQV9Q7SLH9PIM&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_34&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.REMHHEYZWRQV9Q7S.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1022]: Black
+            - generic [ref=e1023]:
+              - generic [ref=e1025]:
+                - text: "4"
+                - img [ref=e1026]
+              - text: (193)
+            - img [ref=e1028]
+            - link "₹470 ₹999 52% off" [ref=e1029] [cursor=pointer]:
+              - /url: /mi-original-x-pro-series-5a-voice-remote-control-google-android-bluetooth-remote-device-tv-xiaomi-redmi-smart-tv-4a-controller/p/itmaaf3796ab4892?pid=REMHHEYZWRQV9Q7S&lid=LSTREMHHEYZWRQV9Q7SLH9PIM&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_34&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.REMHHEYZWRQV9Q7S.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1030]:
+                - generic [ref=e1031]: ₹470
+                - generic [ref=e1032]: ₹999
+                - generic [ref=e1033]: 52% off
+            - generic [ref=e1036]: Only few left
+          - generic [ref=e1038]:
+            - link "Kapiva Cholest Fit Juice - Support Healthy Cholesterol with 6 Ayurvedic Herbs" [ref=e1039] [cursor=pointer]:
+              - /url: /kapiva-cholest-fit-juice-support-healthy-cholesterol-6-ayurvedic-herbs/p/itm304e189712c48?pid=AYDHGJYARDM57BXE&lid=LSTAYDHGJYARDM57BXENCTIS6&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_35&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4YR6SzwwJgV-Iqob9pq1JWkYDzVAG9XVbw7o4FPu54VG95koc4Vde5BrV07v6K7Rm4%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Kapiva Cholest Fit Juice - Support Healthy Cholesterol with 6 Ayurvedic Herbs" [ref=e1043]
+              - img [ref=e1046]
+            - img [ref=e1049]
+            - link "Kapiva Cholest Fit Juice - Support Healthy Cholesterol ..." [ref=e1052] [cursor=pointer]:
+              - /url: /kapiva-cholest-fit-juice-support-healthy-cholesterol-6-ayurvedic-herbs/p/itm304e189712c48?pid=AYDHGJYARDM57BXE&lid=LSTAYDHGJYARDM57BXENCTIS6&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_35&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4YR6SzwwJgV-Iqob9pq1JWkYDzVAG9XVbw7o4FPu54VG95koc4Vde5BrV07v6K7Rm4%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1053]: Pack of 2, 2 L
+            - generic [ref=e1054]:
+              - generic [ref=e1056]:
+                - text: "4.2"
+                - img [ref=e1057]
+              - text: (365)
+            - img [ref=e1059]
+            - link "₹1,065 ₹1,299 18% off" [ref=e1060] [cursor=pointer]:
+              - /url: /kapiva-cholest-fit-juice-support-healthy-cholesterol-6-ayurvedic-herbs/p/itm304e189712c48?pid=AYDHGJYARDM57BXE&lid=LSTAYDHGJYARDM57BXENCTIS6&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_35&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4YR6SzwwJgV-Iqob9pq1JWkYDzVAG9XVbw7o4FPu54VG95koc4Vde5BrV07v6K7Rm4%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1061]:
+                - generic [ref=e1062]: ₹1,065
+                - generic [ref=e1063]: ₹1,299
+                - generic [ref=e1064]: 18% off
+            - generic [ref=e1067]: Lowest price since launch
+          - generic [ref=e1069]:
+            - link "airtech Strong metal Black tripod stand with ring light for phography and video Ring Flash" [ref=e1070] [cursor=pointer]:
+              - /url: /airtech-strong-metal-black-tripod-stand-ring-light-phography-video-flash/p/itm1469c7da7cdde?pid=ACCGE7FB895669UV&lid=LSTACCGE7FB895669UVDDRAUI&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_36&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCGE7FB895669UV.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "airtech Strong metal Black tripod stand with ring light for phography and video Ring Flash" [ref=e1074]
+              - img [ref=e1077]
+            - link "airtech Strong metal Black tripod stand with ring light..." [ref=e1079] [cursor=pointer]:
+              - /url: /airtech-strong-metal-black-tripod-stand-ring-light-phography-video-flash/p/itm1469c7da7cdde?pid=ACCGE7FB895669UV&lid=LSTACCGE7FB895669UVDDRAUI&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_36&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCGE7FB895669UV.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1080]: Black
+            - generic [ref=e1081]:
+              - generic [ref=e1083]:
+                - text: "3.8"
+                - img [ref=e1084]
+              - text: (19,644)
+            - link "₹461 ₹1,999 76% off" [ref=e1085] [cursor=pointer]:
+              - /url: /airtech-strong-metal-black-tripod-stand-ring-light-phography-video-flash/p/itm1469c7da7cdde?pid=ACCGE7FB895669UV&lid=LSTACCGE7FB895669UVDDRAUI&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_36&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCGE7FB895669UV.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1086]:
+                - generic [ref=e1087]: ₹461
+                - generic [ref=e1088]: ₹1,999
+                - generic [ref=e1089]: 76% off
+            - generic [ref=e1092]: Only few left
+        - generic [ref=e1094]:
+          - generic [ref=e1096]:
+            - link "vvqvv Japanese Herbal Pain Gel – Refreshing Cooling Massage Balm Gel" [ref=e1097] [cursor=pointer]:
+              - /url: /vvqvv-japanese-herbal-pain-gel-refreshing-cooling-massage-balm/p/itmd47e663d5075a?pid=BPRHK48CANSAFWGC&lid=LSTBPRHK48CANSAFWGCRJI3AE&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_37&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4boG8gnmoNklAw_4jyxUzQMz9TVqX1AXAvLDEa3Who0NfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "vvqvv Japanese Herbal Pain Gel – Refreshing Cooling Massage Balm Gel" [ref=e1101]
+              - img [ref=e1104]
+            - img [ref=e1107]
+            - link "vvqvv Japanese Herbal Pain Gel – Refreshing Cooling Mas..." [ref=e1110] [cursor=pointer]:
+              - /url: /vvqvv-japanese-herbal-pain-gel-refreshing-cooling-massage-balm/p/itmd47e663d5075a?pid=BPRHK48CANSAFWGC&lid=LSTBPRHK48CANSAFWGCRJI3AE&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_37&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4boG8gnmoNklAw_4jyxUzQMz9TVqX1AXAvLDEa3Who0NfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1111]: 2 x 100 g
+            - generic [ref=e1112]:
+              - generic [ref=e1114]:
+                - text: "3.9"
+                - img [ref=e1115]
+              - text: (150)
+            - img [ref=e1117]
+            - link "₹148 ₹799 81% off" [ref=e1118] [cursor=pointer]:
+              - /url: /vvqvv-japanese-herbal-pain-gel-refreshing-cooling-massage-balm/p/itmd47e663d5075a?pid=BPRHK48CANSAFWGC&lid=LSTBPRHK48CANSAFWGCRJI3AE&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_37&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4boG8gnmoNklAw_4jyxUzQMz9TVqX1AXAvLDEa3Who0NfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1119]:
+                - generic [ref=e1120]: ₹148
+                - generic [ref=e1121]: ₹799
+                - generic [ref=e1122]: 81% off
+          - generic [ref=e1124]:
+            - link "Magic Ink Copybooks For Kids Reusable Handwriting Workbooks For Preschools Grooves Template Design And Handwriting Aid Magic Practice Copybook For Kids The Print Writing (4 Books With Pens)" [ref=e1125] [cursor=pointer]:
+              - /url: /magic-ink-copybooks-kids-reusable-handwriting-workbooks-preschools-grooves-template-design-aid-practice-copybook-print-writing-4-books-pens/p/itm64d9b1301ecef?pid=RBKGHA4GDBPYDN2W&lid=LSTRBKGHA4GDBPYDN2WO7BOLG&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_38&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Z9sRCQmvug1lo9ZVQHEwd41zlxIrGNhq6z5JG8jWJazfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Magic Ink Copybooks For Kids Reusable Handwriting Workbooks For Preschools Grooves Template Design And Handwriting Aid Magic Practice Copybook For Kids The Print Writing (4 Books With Pens)" [ref=e1129]
+              - img [ref=e1132]
+            - img [ref=e1135]
+            - link "Magic Ink Copybooks For Kids Reusable Handwriting Workb..." [ref=e1138] [cursor=pointer]:
+              - /url: /magic-ink-copybooks-kids-reusable-handwriting-workbooks-preschools-grooves-template-design-aid-practice-copybook-print-writing-4-books-pens/p/itm64d9b1301ecef?pid=RBKGHA4GDBPYDN2W&lid=LSTRBKGHA4GDBPYDN2WO7BOLG&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_38&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Z9sRCQmvug1lo9ZVQHEwd41zlxIrGNhq6z5JG8jWJazfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1139]: Spiral, Not Applicable
+            - generic [ref=e1140]:
+              - generic [ref=e1142]:
+                - text: "4"
+                - img [ref=e1143]
+              - text: (2,721)
+            - img [ref=e1145]
+            - link "₹49 ₹1,300 96% off" [ref=e1146] [cursor=pointer]:
+              - /url: /magic-ink-copybooks-kids-reusable-handwriting-workbooks-preschools-grooves-template-design-aid-practice-copybook-print-writing-4-books-pens/p/itm64d9b1301ecef?pid=RBKGHA4GDBPYDN2W&lid=LSTRBKGHA4GDBPYDN2WO7BOLG&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_38&otracker=browse&fm=organic&iid=en_86J8yQKG5nKJ0j_i7p2ROY00c7sGF8-h3UG-lP-xL4Z9sRCQmvug1lo9ZVQHEwd41zlxIrGNhq6z5JG8jWJazfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1147]:
+                - generic [ref=e1148]: ₹49
+                - generic [ref=e1149]: ₹1,300
+                - generic [ref=e1150]: 96% off
+            - generic [ref=e1153]: Buy 2 items, save extra ₹20
+          - generic [ref=e1155]:
+            - link "EXPERTRONICS Power Cord 8 m 8 Meter Telephone Landline Extension Cord Cable Landline Wire (Compatible with fax, modems, Connects telephones, Black)" [ref=e1156] [cursor=pointer]:
+              - /url: /expertronics-power-cord-8-m-meter-telephone-landline-extension-cable-wire-compatible-fax-modems-connects-telephones-black/p/itm4d051d17b10f2?pid=ACCHF4RBBR5AFZZ7&lid=LSTACCHF4RBBR5AFZZ7CI6K6D&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_39&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCHF4RBBR5AFZZ7.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "EXPERTRONICS Power Cord 8 m 8 Meter Telephone Landline Extension Cord Cable Landline Wire (Compatible with fax, modems, Connects telephones, Black)" [ref=e1160]
+              - img [ref=e1163]
+            - link "EXPERTRONICS Power Cord 8 m 8 Meter Telephone Landline ..." [ref=e1165] [cursor=pointer]:
+              - /url: /expertronics-power-cord-8-m-meter-telephone-landline-extension-cable-wire-compatible-fax-modems-connects-telephones-black/p/itm4d051d17b10f2?pid=ACCHF4RBBR5AFZZ7&lid=LSTACCHF4RBBR5AFZZ7CI6K6D&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_39&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCHF4RBBR5AFZZ7.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1166]: Compatible with LANDLINE PHONE, ALL TYPE LAND LINE PHONE, Black, NA
+            - generic [ref=e1167]:
+              - generic [ref=e1169]:
+                - text: "4.2"
+                - img [ref=e1170]
+              - text: (129)
+            - img [ref=e1172]
+            - link "₹165 ₹799 79% off" [ref=e1173] [cursor=pointer]:
+              - /url: /expertronics-power-cord-8-m-meter-telephone-landline-extension-cable-wire-compatible-fax-modems-connects-telephones-black/p/itm4d051d17b10f2?pid=ACCHF4RBBR5AFZZ7&lid=LSTACCHF4RBBR5AFZZ7CI6K6D&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_39&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.ACCHF4RBBR5AFZZ7.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1174]:
+                - generic [ref=e1175]: ₹165
+                - generic [ref=e1176]: ₹799
+                - generic [ref=e1177]: 79% off
+            - generic [ref=e1180]: Saver Deal
+          - generic [ref=e1182]:
+            - link "Dr.Bronner's Herbal Lizard Repellent Spray for Home Kitchen Bathroom Non Toxic" [ref=e1183] [cursor=pointer]:
+              - /url: /dr-bronner-s-herbal-lizard-repellent-spray-home-kitchen-bathroom-non-toxic/p/itm9643a6a6f9336?pid=IRPHNFJSHN4GDQKW&lid=LSTIRPHNFJSHN4GDQKWFRYRVJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_40&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.IRPHNFJSHN4GDQKW.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - img "Dr.Bronner's Herbal Lizard Repellent Spray for Home Kitchen Bathroom Non Toxic" [ref=e1187]
+              - img [ref=e1190]
+            - link "Dr.Bronner's Herbal Lizard Repellent Spray for Home Kit..." [ref=e1192] [cursor=pointer]:
+              - /url: /dr-bronner-s-herbal-lizard-repellent-spray-home-kitchen-bathroom-non-toxic/p/itm9643a6a6f9336?pid=IRPHNFJSHN4GDQKW&lid=LSTIRPHNFJSHN4GDQKWFRYRVJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_40&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.IRPHNFJSHN4GDQKW.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1193]: 250 ml
+            - generic [ref=e1194]:
+              - generic [ref=e1196]:
+                - text: "4.6"
+                - img [ref=e1197]
+              - text: (45)
+            - img [ref=e1199]
+            - link "₹256 ₹499 48% off" [ref=e1200] [cursor=pointer]:
+              - /url: /dr-bronner-s-herbal-lizard-repellent-spray-home-kitchen-bathroom-non-toxic/p/itm9643a6a6f9336?pid=IRPHNFJSHN4GDQKW&lid=LSTIRPHNFJSHN4GDQKWFRYRVJ&marketplace=FLIPKART&store=search.flipkart.com&srno=b_1_40&otracker=browse&fm=organic&iid=9fc6a26c-a2ed-45af-b2dd-ab8afc36f740.IRPHNFJSHN4GDQKW.SEARCH&ppt=None&ppn=None&ssid=ya7fmp7tq80000001780501871156&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1201]:
+                - generic [ref=e1202]: ₹256
+                - generic [ref=e1203]: ₹499
+                - generic [ref=e1204]: 48% off
+            - generic [ref=e1207]: Only few left
+        - generic [ref=e1210]:
+          - generic [ref=e1211]: Page 1 of 6,265
+          - navigation [ref=e1212]:
+            - link "1" [ref=e1213] [cursor=pointer]:
+              - /url: /search?page=1
+            - link "2" [ref=e1214] [cursor=pointer]:
+              - /url: /search?page=2
+            - link "3" [ref=e1215] [cursor=pointer]:
+              - /url: /search?page=3
+            - link "4" [ref=e1216] [cursor=pointer]:
+              - /url: /search?page=4
+            - link "5" [ref=e1217] [cursor=pointer]:
+              - /url: /search?page=5
+            - link "6" [ref=e1218] [cursor=pointer]:
+              - /url: /search?page=6
+            - link "7" [ref=e1219] [cursor=pointer]:
+              - /url: /search?page=7
+            - link "8" [ref=e1220] [cursor=pointer]:
+              - /url: /search?page=8
+            - link "9" [ref=e1221] [cursor=pointer]:
+              - /url: /search?page=9
+            - link "10" [ref=e1222] [cursor=pointer]:
+              - /url: /search?page=10
+            - link "Next" [ref=e1223] [cursor=pointer]:
+              - /url: /search?page=2
+        - generic [ref=e1225]:
+          - text: Did you find what you were looking for?
+          - generic [ref=e1226]:
+            - generic [ref=e1227] [cursor=pointer]: "Yes"
+            - generic [ref=e1228] [cursor=pointer]: "No"
+    - generic [ref=e1230]:
+      - generic [ref=e1231]: Reviews for Popular All Categories
+      - generic [ref=e1232]:
+        - generic [ref=e1233]:
+          - generic [ref=e1235]:
+            - img "airtech Strong metal Black tripod stand with ring light for phography and video Ring Flash"
+          - generic [ref=e1236]:
+            - link "1. airtech Strong metal Black ... 3.8 19,644 Ratings&1,051 Reviews ₹461 76% off" [ref=e1237] [cursor=pointer]:
+              - /url: /airtech-strong-metal-black-tripod-stand-ring-light-phography-video-flash/p/itm1469c7da7cdde?pid=ACCGE7FB895669UV&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1239]: 1. airtech Strong metal Black ...
+              - generic [ref=e1240]:
+                - generic [ref=e1241]:
+                  - text: "3.8"
+                  - img [ref=e1242]
+                - generic [ref=e1243]:
+                  - text: 19,644 Ratings
+                  - generic [ref=e1244]: "&1,051 Reviews"
+              - generic [ref=e1246]:
+                - generic [ref=e1247]: ₹461
+                - generic [ref=e1248]: 76% off
+            - list [ref=e1249]:
+              - listitem [ref=e1250]: "Suitable For: Mobile"
+              - listitem [ref=e1251]: "Type: Ring Flash"
+        - generic [ref=e1252]:
+          - generic [ref=e1253]: Most Helpful Review
+          - generic [ref=e1255]:
+            - generic [ref=e1256]:
+              - generic [ref=e1257]:
+                - text: "3"
+                - img [ref=e1258]
+              - paragraph [ref=e1259]: Does the job
+            - generic [ref=e1263]: Very nice product but ring light was small but very nice 👍🏻
+            - generic [ref=e1265]:
+              - paragraph [ref=e1266]: Nutan Tiwari
+              - img [ref=e1267]
+              - paragraph [ref=e1271]: Certified Buyer
+              - paragraph [ref=e1272]: May, 2024
+        - generic [ref=e1273]:
+          - generic [ref=e1274]: Recent Review
+          - generic [ref=e1276]:
+            - generic [ref=e1277]:
+              - generic [ref=e1278]:
+                - text: "3"
+                - img [ref=e1279]
+              - paragraph [ref=e1280]: Good
+            - generic [ref=e1284]: Power of light is note perfect
+            - generic [ref=e1286]:
+              - paragraph [ref=e1287]: Sneha Mondal
+              - img [ref=e1288]
+              - paragraph [ref=e1292]: Certified Buyer
+              - paragraph [ref=e1293]: 2 days ago
+      - generic [ref=e1294]:
+        - generic [ref=e1295]:
+          - generic [ref=e1297]:
+            - img "Vastarpara door 4PCS Car Silicone Door Latch Lock Protective Cover Car Pet Door Protector"
+          - link "2. Vastarpara door 4PCS Car Si... 3.7 41 Ratings&20 Reviews ₹170 65% off" [ref=e1299] [cursor=pointer]:
+            - /url: /vastarpara-door-4pcs-car-silicone-latch-lock-protective-cover-pet-protector/p/itm53f6b331397b2?pid=RTDHMNZSCWH4MXPH&marketplace=FLIPKART&ov_redirect=true
+            - generic [ref=e1301]: 2. Vastarpara door 4PCS Car Si...
+            - generic [ref=e1302]:
+              - generic [ref=e1303]:
+                - text: "3.7"
+                - img [ref=e1304]
+              - generic [ref=e1305]:
+                - text: 41 Ratings
+                - generic [ref=e1306]: "&20 Reviews"
+            - generic [ref=e1308]:
+              - generic [ref=e1309]: ₹170
+              - generic [ref=e1310]: 65% off
+        - generic [ref=e1311]:
+          - generic [ref=e1312]: Most Helpful Review
+          - generic [ref=e1314]:
+            - generic [ref=e1315]:
+              - generic [ref=e1316]:
+                - text: "1"
+                - img [ref=e1317]
+              - paragraph [ref=e1318]: Don't waste your money
+            - generic [ref=e1322]: Not good 👎🏻👎🏻👎🏻👎🏻
+            - generic [ref=e1324]:
+              - paragraph [ref=e1325]: Sambhu Patel
+              - img [ref=e1326]
+              - paragraph [ref=e1330]: Certified Buyer
+              - paragraph [ref=e1331]: 5 days ago
+        - generic [ref=e1332]:
+          - generic [ref=e1333]: Recent Review
+          - generic [ref=e1335]:
+            - generic [ref=e1336]:
+              - generic [ref=e1337]:
+                - text: "1"
+                - img [ref=e1338]
+              - paragraph [ref=e1339]: Don't waste your money
+            - generic [ref=e1343]: Not good 👎🏻👎🏻👎🏻👎🏻
+            - generic [ref=e1345]:
+              - paragraph [ref=e1346]: Sambhu Patel
+              - img [ref=e1347]
+              - paragraph [ref=e1351]: Certified Buyer
+              - paragraph [ref=e1352]: 5 days ago
+      - generic [ref=e1353]:
+        - generic [ref=e1354]:
+          - generic [ref=e1356]:
+            - img "AR Nutrition Vedacure 100% Authentic Herbal & Gentle Ingredients Detox Foot Pads Plaster & Patch"
+          - generic [ref=e1357]:
+            - link "3. AR Nutrition Vedacure 100% ... 4.2 16 Ratings&1 Reviews ₹141 71% off" [ref=e1358] [cursor=pointer]:
+              - /url: /ar-nutrition-vedacure-100-authentic-herbal-gentle-ingredients-detox-foot-pads-plaster-patch/p/itm7e5f1f7165de0?pid=BPRHMX3CGRH8NKBJ&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1360]: 3. AR Nutrition Vedacure 100% ...
+              - generic [ref=e1361]:
+                - generic [ref=e1362]:
+                  - text: "4.2"
+                  - img [ref=e1363]
+                - generic [ref=e1364]:
+                  - text: 16 Ratings
+                  - generic [ref=e1365]: "&1 Reviews"
+              - generic [ref=e1367]:
+                - generic [ref=e1368]: ₹141
+                - generic [ref=e1369]: 71% off
+            - list [ref=e1370]:
+              - listitem [ref=e1371]: "Application Area: Foot"
+              - listitem [ref=e1372]: "Container Type: Plastic Jar"
+              - listitem [ref=e1373]: "Form: Plaster & Patch"
+        - generic [ref=e1374]:
+          - generic [ref=e1375]: Most Helpful Review
+          - generic [ref=e1377]:
+            - generic [ref=e1378]:
+              - generic [ref=e1379]:
+                - text: "5"
+                - img [ref=e1380]
+              - paragraph [ref=e1381]: Brilliant
+            - generic [ref=e1385]:
+              - text: Good and nice product
+              - text: Very useful and after use for results is awasome
+            - generic [ref=e1387]:
+              - paragraph [ref=e1388]: Gunjan Agarwal
+              - img [ref=e1389]
+              - paragraph [ref=e1393]: Certified Buyer
+              - paragraph [ref=e1394]: 16 days ago
+        - generic [ref=e1395]:
+          - generic [ref=e1396]: Recent Review
+          - generic [ref=e1398]:
+            - generic [ref=e1399]:
+              - generic [ref=e1400]:
+                - text: "5"
+                - img [ref=e1401]
+              - paragraph [ref=e1402]: Brilliant
+            - generic [ref=e1406]:
+              - text: Good and nice product
+              - text: Very useful and after use for results is awasome
+            - generic [ref=e1408]:
+              - paragraph [ref=e1409]: Gunjan Agarwal
+              - img [ref=e1410]
+              - paragraph [ref=e1414]: Certified Buyer
+              - paragraph [ref=e1415]: 16 days ago
+      - generic [ref=e1416]:
+        - generic [ref=e1417]:
+          - generic [ref=e1419]:
+            - img "Asthakesari Asthma Allergy Syrup"
+          - generic [ref=e1420]:
+            - link "4. Asthakesari Asthma Allergy ... 4.2 1,481 Ratings&42 Reviews ₹760 19% off" [ref=e1421] [cursor=pointer]:
+              - /url: /asthakesari-asthma-allergy-syrup/p/itm885df5f0339b2?pid=AYDGHXYJJGRDK62A&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1423]: 4. Asthakesari Asthma Allergy ...
+              - generic [ref=e1424]:
+                - generic [ref=e1425]:
+                  - text: "4.2"
+                  - img [ref=e1426]
+                - generic [ref=e1427]:
+                  - text: 1,481 Ratings
+                  - generic [ref=e1428]: "&42 Reviews"
+              - generic [ref=e1430]:
+                - generic [ref=e1431]: ₹760
+                - generic [ref=e1432]: 19% off
+            - list [ref=e1433]:
+              - listitem [ref=e1434]: "Quantity: 200 ml"
+              - listitem [ref=e1435]: "Form: Syrup"
+              - listitem [ref=e1436]: "Ayush License Number: 6691(SM)HR"
+        - generic [ref=e1437]:
+          - generic [ref=e1438]: Most Helpful Review
+          - generic [ref=e1440]:
+            - generic [ref=e1441]:
+              - generic [ref=e1442]:
+                - text: "5"
+                - img [ref=e1443]
+              - paragraph [ref=e1444]: Awesome
+            - generic [ref=e1448]: Very effective in bronchitis asthma allergy
+            - generic [ref=e1450]:
+              - paragraph [ref=e1451]: Ashwani Yadav
+              - img [ref=e1452]
+              - paragraph [ref=e1456]: Certified Buyer
+              - paragraph [ref=e1457]: May, 2023
+        - generic [ref=e1458]:
+          - generic [ref=e1459]: Recent Review
+          - generic [ref=e1461]:
+            - generic [ref=e1462]:
+              - generic [ref=e1463]:
+                - text: "5"
+                - img [ref=e1464]
+              - paragraph [ref=e1465]: Classy product
+            - generic [ref=e1469]: It's a very good product. And its really work. People who has asthma can used it.
+            - generic [ref=e1471]:
+              - paragraph [ref=e1472]: Samika Bodh
+              - img [ref=e1473]
+              - paragraph [ref=e1477]: Certified Buyer
+              - paragraph [ref=e1478]: 1 month ago
+      - generic [ref=e1479]:
+        - generic [ref=e1480]:
+          - generic [ref=e1482]:
+            - img "Liora Ultra-Soft, Highly Absorbent Toilet Rolls - 235 Pulls x 10 Rolls Toilet Paper Roll"
+          - generic [ref=e1483]:
+            - link "5. Liora Ultra-Soft, Highly Ab... 4 285 Ratings&23 Reviews ₹135 69% off" [ref=e1484] [cursor=pointer]:
+              - /url: /liora-ultra-soft-highly-absorbent-toilet-rolls-235-pulls-x-10-paper-roll/p/itm486de4a8d9dcc?pid=TPOHJWDGNWGF5DD4&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1486]: 5. Liora Ultra-Soft, Highly Ab...
+              - generic [ref=e1487]:
+                - generic [ref=e1488]:
+                  - text: "4"
+                  - img [ref=e1489]
+                - generic [ref=e1490]:
+                  - text: 285 Ratings
+                  - generic [ref=e1491]: "&23 Reviews"
+              - generic [ref=e1493]:
+                - generic [ref=e1494]: ₹135
+                - generic [ref=e1495]: 69% off
+            - list [ref=e1496]:
+              - listitem [ref=e1497]: 3 Ply, 10 Rolls
+              - listitem [ref=e1498]: 235 Sheets/Roll
+              - listitem [ref=e1499]: Ultra Soft Tissue
+        - generic [ref=e1500]:
+          - generic [ref=e1501]: Most Helpful Review
+          - generic [ref=e1503]:
+            - generic [ref=e1504]:
+              - generic [ref=e1505]:
+                - text: "5"
+                - img [ref=e1506]
+              - paragraph [ref=e1507]: Must buy!
+            - generic [ref=e1511]: I used to buy tissue rolls for so many years but couldn't find better quality like this at a very low price. Thanks
+            - generic [ref=e1513]:
+              - paragraph [ref=e1514]: Flipkart Customer
+              - img [ref=e1515]
+              - paragraph [ref=e1519]: Certified Buyer
+              - paragraph [ref=e1520]: 2 months ago
+        - generic [ref=e1521]:
+          - generic [ref=e1522]: Recent Review
+          - generic [ref=e1524]:
+            - generic [ref=e1525]:
+              - generic [ref=e1526]:
+                - text: "4"
+                - img [ref=e1527]
+              - paragraph [ref=e1528]: Pretty good
+            - generic [ref=e1532]: Good product in this price range
+            - generic [ref=e1534]:
+              - paragraph [ref=e1535]: Arpana Rai
+              - img [ref=e1536]
+              - paragraph [ref=e1540]: Certified Buyer
+              - paragraph [ref=e1541]: 4 days ago
+  - contentinfo [ref=e1542]:
+    - generic [ref=e1544]:
+      - generic [ref=e1545]:
+        - generic [ref=e1546]:
+          - generic [ref=e1547]: ABOUT
+          - link "Contact Us" [ref=e1548] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e1549] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e1550] [cursor=pointer]:
+            - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+          - link "Flipkart Stories" [ref=e1551] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e1552] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e1553] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e1554]:
+          - generic [ref=e1555]: GROUP COMPANIES
+          - link "Myntra" [ref=e1556] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e1557] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e1558] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e1559]:
+          - generic [ref=e1560]: HELP
+          - link "Payments" [ref=e1561] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e1562] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e1563] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e1564] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e1565]:
+          - generic [ref=e1566]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e1567] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e1568] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e1569] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e1570] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e1571] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e1572] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e1573] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e1574] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1576]:
+          - generic [ref=e1577]: "Mail Us:"
+          - generic [ref=e1580]:
+            - paragraph [ref=e1581]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1582]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1583]: Clove Embassy Tech Village,
+            - paragraph [ref=e1584]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1585]: Bengaluru, 560103,
+            - paragraph [ref=e1586]: Karnataka, India
+          - generic [ref=e1587]: Social
+          - generic [ref=e1588]:
+            - link [ref=e1590] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+              - img [ref=e1591]
+            - link [ref=e1593] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+              - img [ref=e1594]
+            - link [ref=e1596] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+              - img [ref=e1597]
+            - link [ref=e1599] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+              - img [ref=e1600]
+        - generic [ref=e1602]:
+          - generic [ref=e1603]: "Registered Office Address:"
+          - generic [ref=e1606]:
+            - paragraph [ref=e1607]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1608]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1609]: Clove Embassy Tech Village,
+            - paragraph [ref=e1610]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1611]: Bengaluru, 560103,
+            - paragraph [ref=e1612]: Karnataka, India
+            - paragraph [ref=e1613]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e1614]:
+              - text: "Telephone:"
+              - link "044-45614700" [ref=e1615] [cursor=pointer]:
+                - /url: tel:044-45614700
+              - text: /
+              - link "044-67415800" [ref=e1616] [cursor=pointer]:
+                - /url: tel:044-67415800
+      - generic [ref=e1618]:
+        - generic [ref=e1619]:
+          - img [ref=e1620]
+          - link "Become a Seller" [ref=e1621] [cursor=pointer]:
+            - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e1622]:
+          - img [ref=e1623]
+          - text: Advertise
+        - generic [ref=e1624]:
+          - img [ref=e1625]
+          - link "Gift Cards" [ref=e1626] [cursor=pointer]:
+            - /url: /the-gift-card-store?otracker=footer_navlinks
+        - generic [ref=e1627]:
+          - img [ref=e1628]
+          - link "Help Center" [ref=e1629] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e1630]: © 2007-2026 Flipkart.com
+        - img [ref=e1631]
+```
+
+# Test source
+
+```ts
+  1  | import {test,expect} from '@playwright/test';
+  2  | 
+  3  | test.describe('Flipkart Search', () => {
+  4  | 
+  5  |     test.beforeEach(async ({ page }) => {
+> 6  |         await page.goto('https://www.flipkart.com/search');
+     |                    ^ Error: page.goto: Test timeout of 30000ms exceeded.
+  7  |     });
+  8  | 
+  9  |     test('Search for macmini and validate results', async ({ page }) => {
+  10 |         // Search for macmini
+  11 |         await page.locator('input[name="q"]').fill("macmini");
+  12 |         await page.locator('button[type="submit"]').click();
+  13 |         
+  14 |         // Wait for results to load
+  15 |         await page.waitForSelector('div[data-id]', { timeout: 10000 });
+  16 |         
+  17 |         // Click on SVG icon (settings/filter icon if available)
+  18 |         const svgIcon = page.locator('svg').first();
+  19 |         if (await svgIcon.isVisible({ timeout: 5000 })) {
+  20 |             await svgIcon.click();
+  21 |         }
+  22 |         
+  23 |         // Get all product results on the first page
+  24 |         const productCards = await page.locator('div[data-id]').all();
+  25 |         console.log(`Total products found: ${productCards.length}`);
+  26 |         
+  27 |         // Click on "Price -- Low to High" sorting button
+  28 |         const sortOptions = page.locator('//div[contains(text(),"Price -- Low to High")]').first();
+  29 |         if (await sortOptions.isVisible({ timeout: 5000 })) {
+  30 |             await sortOptions.click();
+  31 |             // Wait for sorting to complete
+  32 |             await page.waitForLoadState('networkidle');
+  33 |         }
+  34 |         
+  35 |         // Get all results after sorting
+  36 |         const sortedProducts = await page.locator('div[data-id]').all();
+  37 |         console.log(`Total products after sorting: ${sortedProducts.length}`);
+  38 |         
+  39 |         // Find first product and print its name and price
+  40 |         if (sortedProducts.length > 0) {
+  41 |             const firstProduct = sortedProducts[0];
+  42 |             const productName = await firstProduct.locator('a[title]').nth(0).textContent();    
+  43 |             const productPrice = await firstProduct.locator('//following-sibling::a/div/div').first().textContent();
+  44 |             
+  45 |             console.log('\n========== CHEAPEST MACMINI ==========');
+  46 |             console.log(`Product Name: ${productName}`);
+  47 |             console.log(`Price: ${productPrice}`);
+  48 |             console.log('======================================\n');
+  49 |         }
+  50 |         
+  51 |     });
+  52 | 
+  53 | 
+  54 | });
+```

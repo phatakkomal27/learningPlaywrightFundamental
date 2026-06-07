@@ -1,0 +1,2 @@
+Total products found: 40
+Total products after sorting: 40

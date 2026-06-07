@@ -1,0 +1,6 @@
+Total products found: 40
+Total products after sorting: 40
+cheapest product details:
+[
+  'Apple MQH63HN/A M2 Ultra chip (64 GB RAM/Integrated 60 ...₹4,09,990₹4,19,9002% offOnly 4 left'
+]
